@@ -1,0 +1,514 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*PC端*/
+#home nav > a{
+	margin-left: 50px;
+	font-size: 20px;
+	min-height: 48px;
+	line-height: 48px;
+}
+#home nav a{
+	color:rgb(255,255,255);
+	text-shadow:0 0 2px rgb(0,0,0);
+}
+ul.mobileNav{
+	display:none;
+}
+ul.myNav{
+	/*border:2px rgb(200,200,0) solid;*/
+	display: inline-block;
+	float:right;
+	margin-right: 30px;
+	height:48px;
+}
+ul.myNav li{
+	display: inline-block;
+	list-style: none;
+	letter-spacing: 1px
+}
+ul.myNav li a{
+	padding:10px 20px;
+	font-size: 16px;
+	min-height: 48px;
+	line-height: 48px;
+}
+/*改变导航栏的颜色*/
+.bg{/*background-color: rgba(255,255,255,0.9);*/
+background-color: rgba(0,0,0,0.9);}
+
+.fixNav{
+	position: fixed;
+	/*display: block;*/
+	width:100%;
+	top:0;
+	/*right:0;*/
+	z-index: 999;
+}
+
+#home{
+	padding-top: 700px;
+	background-image: url(https://github.com/riversword/images/raw/master/personal%20web%20page/aisi00.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat no-repeat;
+	background-attachment: fixed;
+	background-color: rgb(52,152,219);
+}
+
+#about{
+	/*border:1px rgb(0,0,0) solid;*/
+	/*background-color: rgb(230,230,230);*/
+	background-color: rgb(13,204,192);
+	/*background-color: rgb(114,114,114);*/
+}
+
+.aboutLeft{
+    background:url(https://github.com/riversword/images/raw/master/personal%20web%20page/me01.png);
+    background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: none;
+	/*border: 1px rgb(0,0,255) solid;*/
+	height: 500px;
+	background-color: rgb(114,114,114);
+}
+.aboutLeft div { 
+    /*z-index: 1000;*/
+    position:relative;
+    top:0;
+    left: -100%;
+    width: 100%;
+    text-align: center;
+    color: rgba(0,0,0,1);
+    -webkit-transition: all 1s ease; /* Safari 和 Chrome */
+    -moz-transition:all 1s ease; /* Firefox 4 */
+    -o-transition:all 1s ease; /* Opera */
+    transition:all 1s ease;
+}
+.aboutLeft div.hello{
+	left:0;
+}
+.aboutLeft div h3 { 
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200px;
+    height:500px;
+    line-height: 500px; 
+    margin:0;
+    color:rgba(255,255,255,1);
+    /*border:1px rgba(255,0,0,1) solid*/;
+}
+
+/*字体大小需要根据屏幕调整*/
+.introduce{
+	height:500px;
+}
+.introduce h2{
+	margin-top: 10%;
+}
+.introduce p{
+	text-indent: 2em;
+	text-align: justify;
+	font-size: 1.5em;
+}
+
+#works{
+	/*background-color: rgb(0,0,0);*/
+	/*background-color: rgb(178,63,115);*/
+	background-color: rgb(52,152,219);
+	/*background-color: rgb(20,20,20);*/
+	color:rgba(255,255,255,1);
+}
+.worksBox{
+	width:90%;
+	margin:0 auto;
+	padding-bottom: 6%;
+}
+.worksBox h2{
+	color:rgba(255,255,255,1);
+	width:70%;
+	padding:5% 0 2%;
+	margin:0 auto;
+	/*border:1px rgba(255,255,0,0.8) solid;*/
+}
+
+#works .workshow{
+	height:300px;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+#works .workshow>div{
+	height:300px;
+	margin:0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	padding:0;
+	background-color: rgb(254,124,96);
+}
+/*works动画*/
+#works .workshow:nth-child(1)>div{
+	background-image:url(https://github.com/riversword/images/raw/master/personal%20web%20page/works01.jpg);
+	position:relative;
+	left:-150%;
+	top:-150%;
+	-webkit-transition: all 1s ease; /* Safari 和 Chrome */
+    -moz-transition:all 1s ease; /* Firefox 4 */
+    -o-transition:all 1s ease; /* Opera */
+    transition:all 1s ease;
+}
+#works .workshow:nth-child(1)>div.move{top:0; left:0;}
+#works .workshow:nth-child(2)>div{
+	background-image:url(https://github.com/riversword/images/raw/master/personal%20web%20page/works02.jpg);
+	position:relative;
+	left:0;
+	top:-150%;
+	-webkit-transition: all 1s ease; /* Safari 和 Chrome */
+    -moz-transition:all 1s ease; /* Firefox 4 */
+    -o-transition:all 1s ease; /* Opera */
+    transition:all 1s ease;
+}
+#works .workshow:nth-child(2)>div.move{top:0;}
+#works .workshow:nth-child(3)>div{
+	background-image:url(https://github.com/riversword/images/raw/master/personal%20web%20page/works03.png);
+	position:relative;
+	left:150%;
+	top:-150%;
+	-webkit-transition: all 1s ease; /* Safari 和 Chrome */
+    -moz-transition:all 1s ease; /* Firefox 4 */
+    -o-transition:all 1s ease; /* Opera */
+    transition:all 1s ease;
+}
+#works .workshow:nth-child(3)>div.move{left:0; top:0;}
+#works .workshow:nth-child(4)>div{
+	background-image:url(https://github.com/riversword/images/raw/master/personal%20web%20page/works04.png);
+	position:relative;
+	left:-150%;
+	top:0;
+	-webkit-transition: all 1s ease; /* Safari 和 Chrome */
+    -moz-transition:all 1s ease; /* Firefox 4 */
+    -o-transition:all 1s ease; /* Opera */
+    transition:all 1s ease;
+}
+#works .workshow:nth-child(4)>div.move{left:0; top:0;}
+#works .workshow:nth-child(5)>div{
+	background-image:url(https://github.com/riversword/images/raw/master/personal%20web%20page/works05.jpg);
+	opacity: 0;
+	-webkit-transition: all 1s ease; /* Safari 和 Chrome */
+    -moz-transition:all 1s ease; /* Firefox 4 */
+    -o-transition:all 1s ease; /* Opera */
+    transition:all 1s ease;
+}
+#works .workshow:nth-child(5)>div.move{opacity: 1;}
+#works .workshow:nth-child(6)>div{
+	background-image:url(https://github.com/riversword/images/raw/master/personal%20web%20page/works06.jpg);
+	position:relative;
+	left:150%;
+	top:0;
+	-webkit-transition: all 1s ease; /* Safari 和 Chrome */
+    -moz-transition:all 1s ease; /* Firefox 4 */
+    -o-transition:all 1s ease; /* Opera */
+    transition:all 1s ease;
+}
+#works .workshow:nth-child(6)>div.move{left:0;}
+#works .workshow:nth-child(7)>div{
+	background-image:url(https://github.com/riversword/images/raw/master/personal%20web%20page/works07.jpg);
+	position:relative;
+	left:-150%;
+	top:150%;
+	-webkit-transition: all 1s ease; /* Safari 和 Chrome */
+    -moz-transition:all 1s ease; /* Firefox 4 */
+    -o-transition:all 1s ease; /* Opera */
+    transition:all 1s ease;
+}
+#works .workshow:nth-child(7)>div.move{left:0; top:0;}
+#works .workshow:nth-child(8)>div{
+	background-image:url(https://github.com/riversword/images/raw/master/personal%20web%20page/works08.jpg);
+	position:relative;
+	left:0;
+	top:150%;
+	-webkit-transition: all 1s ease; /* Safari 和 Chrome */
+    -moz-transition:all 1s ease; /* Firefox 4 */
+    -o-transition:all 1s ease; /* Opera */
+    transition:all 1s ease;
+}
+#works .workshow:nth-child(8)>div.move{top:0;}
+#works .workshow:nth-child(9)>div{
+	background-image:url(https://github.com/riversword/images/raw/master/personal%20web%20page/works09.jpg);
+	position:relative;
+	left:150%;
+	top:150%;
+	-webkit-transition: all 1s ease; /* Safari 和 Chrome */
+    -moz-transition:all 1s ease; /* Firefox 4 */
+    -o-transition:all 1s ease; /* Opera */
+    transition:all 1s ease;-webkit-transition: all 1s ease;
+}
+#works .workshow:nth-child(9)>div.move{left:0; top:0;}
+
+#works .describe{
+	height:300px;
+	padding: 30% 5px;
+	font-size: 1.5em;
+	text-indent: 2em;
+	text-align: justify;
+	cursor:pointer;
+}
+#works .describe:hover{
+	background-color: rgba(0,0,0,0.7);
+}
+#works .describe p{
+	position:relative;
+	left:0;
+	top:300px;
+	color:transparent;
+	-webkit-transition: all 0.5s ease;
+}
+#works .describe.hoverAntimate p{
+	top:0;
+	color:rgba(255,255,255,1);
+}
+.displayHidden{
+	display:none;
+}
+.viewWork{
+	/*display:none;*/
+	position:fixed;
+	top:0;
+	left:0;
+	background-color: rgba(0,0,0,0.9);
+	z-index: 9999;
+	width:100%;
+	padding:0 20%;
+	text-align: right;
+}
+.viewWork>i{
+	font-size: 3em;
+	/*border:1px rgba(255,0,0,1) solid;*/
+	color:rgba(255,255,255,1);
+	cursor: pointer;
+}
+.viewWork>p{
+	/*border:1px rgba(0,255,0,1) solid;*/
+}
+
+#contact{
+	height:500px;
+	padding:0;
+	/*border:1px rgb(0,0,0) solid;*/
+	border:1px transparent solid;
+	background:url(https://github.com/riversword/images/raw/master/personal%20web%20page/red_pig.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/*background-color: rgb(178,63,115);*/
+	background-color: rgb(131,45,81);
+	color:rgba(255,255,255,1);
+}
+#contact h2{
+	margin:5% auto 3%;
+	text-shadow:0 0 2px rgba(0,0,0,1);
+}
+#contact>p{
+	width:800px;
+	font-size: 1.5em;
+	margin:0 auto;
+	text-indent: 2em;
+	text-shadow:0 0 1px rgba(0,0,0,1);
+}
+#contact .icons{
+	/*border:1px rgba(0,0,0,1) solid;*/
+	width:100%;
+	margin:3% auto 0;
+}
+#contact .icons p{
+	/*border:1px rgba(255,0,0,1) solid;*/
+}
+#contact .icons p:nth-child(1){
+	text-align: center;
+	font-size: 2em;
+}
+#contact .icons a{
+	color:rgba(255,255,255,1);
+	text-shadow:0 0 2px rgba(0,0,0,1);
+}
+#contact .icons p:nth-child(3){
+	font-size: 3em;
+	text-align: center;
+}
+#contact .icons p:nth-child(3) i{
+	margin:0 0.25em;
+}
+.footer{
+	width:100%;
+	/*margin:100px auto 0;*/
+	margin:80px auto 0;
+	text-align: center;
+	color:rgba(255,255,255,0.8);
+	font-size:1.5em;
+}
+
+@media screen and (max-width: 1120px){
+
+.aboutLeft div h3 { font-size: 150px;}
+.introduce h2{margin-top: 10%;}
+.introduce p{font-size: 1.4em;}
+
+#works .describe{font-size: 1.2em;}
+
+
+}
+
+@media screen and (max-width: 900px){
+
+.aboutLeft div h3 { font-size: 120px;}
+.introduce h2{margin-top: 10%;}
+.introduce p{font-size: 1.4em;}
+
+.viewWork{padding:0 10%;}
+
+#contact>p{
+	width:700px;
+	font-size: 1.4em;
+}
+#contact .icons p:nth-child(1){font-size: 1.5em;}
+#contact .icons p:nth-child(3){font-size: 2.5em;}
+.footer{font-size:1.2em;}
+
+}
+
+
+@media screen and (max-width: 800px){
+nav>a{
+	display:none;
+}
+ul.myNav{
+	display: block;
+	float: none;
+	margin:0 auto;
+	text-align: center;
+}
+ul.myNav li{
+	display: inline-block;
+	list-style: none;
+	letter-spacing: 1px
+}
+ul.myNav li a{
+	padding:10px 20px;
+	font-size: 18px;
+	min-height: 48px;
+	line-height: 48px;
+}
+.aboutLeft div h3 {font-size: 100px;}
+
+.introduce p{font-size: 1.3em;}
+
+}
+
+@media screen and (max-width: 768px){
+
+.aboutLeft{height: 400px;}
+.aboutLeft div h3 { 
+     height:400px;
+    line-height: 400px;
+}
+
+.introduce{height:400px;}
+
+#contact{height:auto;}
+#contact>p{
+	width:460px;
+	font-size: 1.2em;
+}
+#contact .icons p:nth-child(1){font-size: 1.2em;}
+#contact .icons p:nth-child(3){font-size: 2.2em;}
+.footer{font-size:1em;}
+
+}
+
+@media screen and (max-width: 500px){
+/*移动端*/
+/*导航栏*/
+nav{
+	/*border: 1px rgb(0,255,0) solid;*/
+	/*border:none;*/
+	width:110px;
+	background-color: transparent  !important;	
+	position:fixed;
+	top:0;
+	right:0;
+	z-index: 999;
+}
+.fixNav{
+	width:110px;
+	right:0;
+}
+
+nav>a{
+	display: none;
+}
+nav ul.mobileNav{
+	display:block;/*不能为inline-block*/
+	border:1px rgb(255,255,255) solid;
+	/*border-radius: 50%;*/
+	border-radius: 10px;
+	width:50px;
+	height:50px;
+	padding:0;
+	margin-left:50px;
+	margin-top: 10px;
+	margin-right:10px;
+	background-color: rgba(0,0,0,0.9);
+	color:rgba(255,255,255,1);
+	text-align: center;
+}
+nav ul.mobileNav li{
+	display:inline-block;
+	height:45px;
+	line-height: 45px;
+	font-size: 25px;
+	/*border: 1px rgb(255,255,255) solid;*/
+}
+nav ul.myNav{
+	display: none;
+	border:1px rgba(255,255,255,0.9) solid;
+	/*display:block;*/
+	float:none;
+	height:auto;
+	border-radius: 10px;
+	width:100px;
+	padding:30px 0;
+	margin-right: 10px;
+	background-color: rgba(0,0,0,0.9);
+	color:rgb(255,255,255);
+	text-align: center;
+	list-style: none;
+}
+nav ul.myNav li{
+	width:100%;
+	display:inline-block;
+	text-align: center;
+}
+
+ul.myNav li a{
+	text-align: center;
+	border-bottom: 1px rgba(255,255,255,0.4) solid;
+	padding:10px 0;
+	color:rgba(255,255,255,0.9);
+	text-decoration: none;
+}
+
+.introduce{height:500px;}
+.introduce p{font-size: 1.2em;}
+.worksBox{
+	padding-bottom: 0;
+	width:100%;
+}
+.viewWork{padding:0 0;}
+#contact>p{
+	width:300px;
+	font-size: 1.1em;
+}
+
+}
