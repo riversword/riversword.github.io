@@ -194,13 +194,15 @@ nav .myNav{
 
 #works .workshow:nth-child(5)>div{
 	background-image:url(https://github.com/riversword/images/raw/master/personal%20web%20page/works05.jpg);
-	opacity: 0;
+	position: relative;
+	left: 0;
+	top: 150%;
 	-webkit-transition: all 1s ease; /* Safari 和 Chrome */
        -moz-transition: all 1s ease; /* Firefox 4 */
          -o-transition: all 1s ease; /* Opera */
     		transition: all 1s ease;
 }
-#works .workshow:nth-child(5)>div.move{opacity: 1;}
+#works .workshow:nth-child(5)>div.move{top:0;}
 
 #works .workshow:nth-child(6)>div{
 	position: relative;
