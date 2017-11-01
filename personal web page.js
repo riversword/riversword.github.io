@@ -39,15 +39,6 @@ $(document).ready(function(){
         $("html,body").animate({scrollTop:$(this.hash).offset().top}, 500);
     });
 
-	//click the "workshow" in "works" section, show the demo
-	$("#works .describe").click(function(){
-		$(this).parent().children('div.viewWork').removeClass('displayHidden');
-	});
-
-	$("#works .viewWork>i").click(function(){
-		$(this).parent('div.viewWork').addClass('displayHidden');
-	});
-
 	//when the mouse hover the "workshow", show the introduction
 	$("#works .describe").mouseover(function(){
 		$(this).addClass('hoverAntimate');
