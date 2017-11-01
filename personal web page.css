@@ -57,16 +57,15 @@ nav .myNav{
 	background-color: rgb(52,152,219);
 }
 
-#about{
-	background-color: rgb(114,114,114);
-}
+#about{background-color: rgb(13,204,192);}
 
 .aboutLeft{
 	height: 500px;
-    background: url(https://github.com/riversword/images/raw/master/personal%20web%20page/me03.jpg);
+    background: url(https://github.com/riversword/images/raw/master/personal%20web%20page/me01.png);
     background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: none;
+	background-color: rgb(114,114,114);
 }
 
 /*the hello animation*/
@@ -91,6 +90,7 @@ nav .myNav{
     height: 500px;
     line-height: 500px; 
     margin: 0;
+    color: rgba(255,255,255,1);
 }
 
 /*the font-size should change in different devices*/
@@ -98,19 +98,18 @@ nav .myNav{
 	height: 500px;
 }
 
-.introduce h3{
-	margin-top: 20%;
+.introduce h2{
+	margin-top: 10%;
 }
 
 .introduce p{
 	font-size: 1.5em;
-	line-height: 1.5em;
 	text-align: justify;
 	text-indent: 2em;
 }
 
 #works{
-	background-color: rgb(0,0,0);
+	background-color: rgb(52,152,219);
 	color: rgba(255,255,255,1);
 }
 
@@ -256,22 +255,18 @@ nav .myNav{
 #works .describe{
 	height: 300px;
 	padding: 30% 5px;
+	font-size: 1.5em;
+	text-indent: 2em;
 	text-align: justify;
+	cursor: pointer;
 }
 
 #works .describe:hover{background-color: rgba(0,0,0,0.7);}
-
-#works .describe a>p{
-	font-size: 1.2em;
-}
 
 #works .describe p{
 	position: relative;
 	left: 0;
 	top: 300px;
-	padding:0 10px;
-	font-size: 1em;
-	text-align: center;
 	color: transparent;
 	-webkit-transition: all 0.5s ease;
 	   -moz-transition: all 0.5s ease; 
@@ -286,15 +281,32 @@ nav .myNav{
 
 .displayHidden{display: none;}
 
+.viewWork{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	width: 100%;
+	padding: 0 20%;
+	text-align: right;
+	background-color: rgba(0,0,0,0.9);
+}
+
+.viewWork>i{
+	font-size: 3em;
+	color: rgba(255,255,255,1);
+	cursor: pointer;
+}
+
 #contact{
 	height: 500px;
 	padding: 0;
 	color: rgba(255,255,255,1);
 	border: 1px transparent solid;
-	background: url(https://github.com/riversword/images/raw/master/personal%20web%20page/hei01.jpg);
+	background: url(https://github.com/riversword/images/raw/master/personal%20web%20page/red_pig.jpg);
 	background-size: cover;
-	background-position:center center;
-	background-repeat: no;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-color: rgb(131,45,81);
 	
@@ -348,7 +360,9 @@ nav .myNav{
 
 .aboutLeft div h3 { font-size: 150px; }
 
-.introduce h3{ margin-top: 10%; }
+.introduce h2{ margin-top: 10%; }
+
+.introduce p{ font-size: 1.4em; }
 
 #works .describe{ font-size: 1.2em; }
 
@@ -358,9 +372,9 @@ nav .myNav{
 
 .aboutLeft div h3 { font-size: 120px; }
 
-/*.introduce h2{ margin-top: 10%; }*/
+.introduce h2{ margin-top: 10%; }
 
-.introduce p{ font-size: 1.3em; }
+.introduce p{ font-size: 1.4em; }
 
 .viewWork{ padding: 0 10%; }
 
@@ -419,15 +433,6 @@ ul.myNav li a{
 
 .introduce{ height: 400px; }
 
-#works .describe{
-	background-color: rgba(0,0,0,0.5);
-}
-
-#works .describe p{
-    top: 0;
-    color: rgba(255,255,255,1);
-}
-
 #contact{ height: auto; }
 
 #contact>p{
@@ -485,7 +490,7 @@ nav ul.mobileNav li{
 }
 
 nav ul.myNav{
-	display: none;
+	display: block;
 	float: none;
 	width: 100px;
 	height: auto;
@@ -515,11 +520,12 @@ ul.myNav li a{
 
 .introduce{ height:500px; }
 
-.introduce h3{
-	margin-top: 15%;
-}
-
 .introduce p{ font-size: 1.2em; }
+
+.worksBox{
+	width: 100%;
+	padding-bottom: 0;
+}
 
 .viewWork{ padding: 0 0; }
 
