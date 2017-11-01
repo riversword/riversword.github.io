@@ -40,8 +40,8 @@ $(document).ready(function(){
     });
 
 	//click the "workshow" in "works" section, show the demo
-	$("#works .describe").click(function(){
-		$(this).parent().children('div.viewWork').removeClass('displayHidden');
+	$("#works .describe>p").click(function(){
+		$(this).parent().parent().children('div.viewWork').removeClass('displayHidden');
 	});
 
 	$("#works .viewWork>i").click(function(){
