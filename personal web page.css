@@ -52,7 +52,7 @@ nav .myNav{
 	background-image: url(https://github.com/riversword/images/raw/master/personal%20web%20page/aisi00.jpg);
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat no-repeat;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-color: rgb(52,152,219);
 }
