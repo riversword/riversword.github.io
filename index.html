@@ -1,213 +1,243 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>riversword's web page</title>
 <meta charset="utf-8">
+<meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>NewJean</title>
 <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
-<link rel="stylesheet" href="personal web page.css">
+<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-<div class="main">
-  <!--home-->
- <section id="home">
-	<nav role="navigation">
- 		 <a class="myNavbarBrand" href="#">riversword</a>
-     <ul class="mobileNav"><li><i class="fa fa-bars"></i></li></ul>
- 		 <ul class="myNav">
- 		 	<li><a href="#home" class="scroll">首页</a></li> 
- 		 	<li><a href="#about" class="scroll">关于</a></li> 
- 		 	<li><a href="#works" class="scroll">作品</a></li> 
- 		 	<li><a href="#contact" class="scroll">联系</a></li>
- 		 </ul>
-    </nav>
- </section>
-
- <!--about-->
- <section id="about">
- 	<div class="container-fluid">
- 		<div class="row">
- 			<div class="col-xs-12 col-sm-6 aboutLeft">
+<div class="screen-cover"></div>
+<div class="header">
+    <div class="menu-button">
         <div>
- 			    <h3 class="text-center">HELLO</h3>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
         </div>
- 			</div>
- 			<div class="col-xs-12 col-sm-6 introduce">
- 				<h3 class="text-center">我叫刘剑，一个自学入门的前端开发者,</h3>
- 				<p>2016年6月，毕业于武汉科技大学(一本)，本科学历，机械自动化专业。通过计算机二级（C语言）、计算机三级（网络技术）、CET6。</p> 
-                <p>能编写语义化的HTML，模块化的CSS，完成较复杂的布局适配各种设备终端；
-                熟悉JavaScript正则表达式、DOM操作等，能脱离jQuery库编码，如原生JS写轮播；能用jQuery代替JS进行开发，掌握AJAX获取数据，了解Bootstrap网格系统；熟练使用github进行代码管理，chrome开发者工具辅助开发，photoshop简单图片处理。  </p>
- 			</div>
- 		</div>
- 	</div>
- </section>
+    </div>
+    <nav>
+        <ul>
+            <li class="choose">首页</li>
+            <li>关于我</li>
+            <li>技能</li>
+            <li>项目作品</li>
+            <li>联系我</li>
+        </ul>
+        <div class="music-icon">
+            <div>
+                <!-- <i class="fa fa-play-circle-o"></i>
+                <i class="fa fa-pause-circle-o"></i> -->
+            </div>
+        </div>
+    </nav>
+</div>
 
- <!--works-->
- <section id="works">
-    <div class="worksBox">
-      <h2 class="text-center">作品</h2>
-      <div class="container-fluid">
-        <div class="row">
+<div class="swiper-container" id="main">
+        <div class="swiper-wrapper" id="home">
+            <div class="swiper-slide">
+                <div>
+                    <h1>Hello,I'm NewJean</h1>
+                    <p>我叫刘剑</p>
+                    <p>一名前端爱好者</p>
+                   <!--  <div class="contact-icon">
+                    <a href="mailto:newjean@163.com?Subject=Hello" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://github.com/riversword" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://codepen.io/riversword/" target="_blank"><i class="fa fa-codepen"></i></a>
+                    <a href="https://weibo.com/u/5362581839/home?wvr=5" target="_blank"><i class="fa fa-weibo"></i></a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="swiper-slide" id="about">
+                <div class="content">
+                    <h3>关于我</h3>
+                    <div class="myPhoto"><!-- <img> --></div>
+                    <div class="infoBox">
+                        <p>&nbsp;<i class="fa fa-graduation-cap">&nbsp; 教育</i> 武汉科技大学/本科</p>
+                        <p>&nbsp;<i class="fa fa-envelope">&nbsp; 邮箱</i><a href="mailto:newjean@163.com?Subject=Hello" target="_blank"> newjean@163.com</a></p>
+                        <p>&nbsp;<i class="fa fa-phone">&nbsp; 电话</i> 138-2233-5864</p>
+                        <p>&nbsp;<i class="fa fa-map-marker">&nbsp; 居住地</i> 广东/江门</p>
+                        <p>&nbsp;<i class="fa fa-birthday-cake">&nbsp; 年龄</i> 24</p>
+                        <p>&nbsp;<i class="fa fa-clock-o">&nbsp; 状态</i> 可随时到岗</p>
+                    </div>
 
-            <div class="col-xs-12 col-sm-4 workshow">
-                <div class="show">
-                    <div class="describe">
-                        <!-- <p>This is a web app to show the local weather. By the geo-positioning of HTML5 / the user's IP , uses HeWeather API get the weather information. It's available to both PC and mobile.</p> -->
-                        <a href="http://www.riverjean.com/showWeather/" target="_blank"><p><i class="fa fa-chain"></i>天气应用</p></a>
+                    <p>2012.9~2016.6，武汉科技大学(一本)，本科学历，机械自动化专业。&nbsp;通过计算机二级（C语言），计算机三级（网络技术），CET6。湖北省一等奖，绘画一等奖...</p> 
+                    <p>在机械行业担任质量工程师1年</p>
+                    
+                </div>
+            </div>
+            <div class="swiper-slide" id="skills">
+                <div>
+                    <h3>技能</h3>
+                    <div class="skills-info mobile-hide">
+                        <div class="skills-list">
+                            <div><p>HTML5</p></div>
+                            <p>能编写语义化的HTML，掌握HTML5新标签用法</p>
+                        </div>
+                        
+                        <div class="skills-list">
+                            <div><p>CSS3</p></div>
+                            <p>能编写模块化的CSS，完成较复杂的布局适配各设备终端</p>
+                        </div>
+
+                        <div class="skills-list">
+                            <div><p style="letter-spacing: -1px">JavaScript</p></div>
+                            <p>熟悉JavaScript API的用法，能脱离库编写，有面向对象思想</p>
+                        </div>
+
+                        <div class="skills-list">
+                            <div><p>jQuery</p></div>
+                            <p>熟练使用jQuery进行开发，了解Bootstrap适配各终端</p>
+                        </div>
+                        <div class="skills-list">
+                            <div><p>其他</p></div>
+                            <p>熟练使用github进行代码管理，chrome开发者工具辅助开发，photoshop简单图片处理</p>
+                        </div>
+                     </div>
+                     <div class="mobile-show">
+                        <p>1.能编写语义化的HTML，掌握HTML5新标签用法。</p>
+                        <p>2.能编写模块化的CSS，完成较复杂的布局并适配各设备终端，使用CSS3实现动画特效。能运用rem单位实现不同浏览器宽度的整页缩放。</p>
+                        <p>3.熟悉JavaScript API的用法，能脱离库编码，用面向对象的方式编程。熟练使用AJAX获取后台数据，并将数据进行可视化展示。</p>
+                        <p>4.能熟练运用jQuery库、Swiper插件进行开发，了解Bootstrap适配各设备终端。</p>
+                        <p>5.熟练使用github进行代码管理，chrome开发者工具辅助开发。</p>
+                        <p>6.能用photoshop进行简单图片处理，有美术基础。</p>
+                        </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide" id="experience">
+                
+                <div class="swiper-container" id="experience-box">
+                     <h3>项目作品</h3>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(image/tulin.jpg)">
+                        <div class="describe">
+                        <a href="http://www.riverjean.com/tulingkeji/" target="_blank"><p><i class="fa fa-chain"></i>图灵科技主页重构</p></a>
+                        <p>更简洁的代码，更少依赖库，实现原设计效果。修复部分交互bug，并兼容多种设备终端。<i class="fa fa-code"></i></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(image/works01.jpg)">
+                        <div class="describe">
+                        <a href="http://htmlpreview.github.io/?https://github.com/riversword/showWeather/blob/master/2.0/index.html" target="_blank"><p><i class="fa fa-chain"></i>天气应用</p></a>
                         <p>HTML5地理定位，AJAX获取天气信息。<i class="fa fa-code"></i></p>
+                        </div>
                     </div>
-                    <div class="viewWork displayHidden">
-                     <i class="fa fa-close"></i> 
-                     <p data-height="1000" data-theme-id="0" data-slug-hash="PJgKRX" data-default-tab="result" data-user="riversword" class="codepen">See the Pen <a href="https://codepen.io/riverrword/pen/PJgKRX">show the local weather [FCC]</a> by riversword (<a href="https://codepen.io/riversword">@RiverSword</a>) on <a href="https://codepen.io">CodePen</a>.</p> 
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-xs-12 col-sm-4 workshow">
-                <div class="show">
-                    <div class="describe">
-                        <!-- <p>A beautiful calculator.</p> -->
-                        <a href="http://www.riverjean.com/calculator/" target="_blank"><p><i class="fa fa-chain"></i>计算器</p></a>
+                    <!-- <div class="swiper-slide" style="background-image:url(image/works02.jpg)">
+                        <div class="describe">
+                        <a href="http://htmlpreview.github.io/?https://github.com/riversword/JavaScript-Calculator/blob/master/2.0/Build%20a%20JavaScript%20Calculator.html" target="_blank"><p><i class="fa fa-chain"></i>计算器</p></a>
                         <p>JS正则表达式。<i class="fa fa-code"></i></p>
-                    </div>
-                    <div class="viewWork displayHidden">
-                     <i class="fa fa-close"></i> 
-                     <p data-height="1000" data-theme-id="0" data-slug-hash="MELvae" data-default-tab="result" data-user="riversword" class="codepen">See the Pen <a href="https://codepen.io/riversword/pen/MELvae">javascript calculator [FCC]</a> by riversword (<a href="https://codepen.io/riversword">@RiverSword</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 workshow">
-                <div class="show">
-                    <div class="describe">
-                        <!-- <p>It's a danmu web app, which collects all users' input informations, and shows them on the screen in a moving way. </p> -->
+                        </div>
+                    </div> -->
+                    <div class="swiper-slide" style="background-image:url(image/works03.png)">
+                        <div class="describe">
                         <a href="http://htmlpreview.github.io/?https://github.com/riversword/danmuapp/blob/master/3.0/danmu%20app.html" target="_blank"><p><i class="fa fa-chain"></i>弹幕</p></a>
                         <p>野狗JS SDK实现云端与客户端进行数据交互<i class="fa fa-code"></i></p>
+                        </div>
                     </div>
-                    <div class="viewWork displayHidden">
-                     <i class="fa fa-close"></i> 
-                     <p data-height="1000" data-theme-id="0" data-slug-hash="JrRQzr" data-default-tab="result" data-user="riversword" class="codepen">See the Pen <a href="https://codepen.io/riversword/pen/JrRQzr">danmu APP [FCC]</a> by riversword (<a href="https://codepen.io/riversword">@RiverSword</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 workshow">
-                <div class="show">
-                    <div class="describe">
-                        <!-- <p>This is Tic Tac Game, you can play with the computer or your friend.</p> -->
-                        <a href="http://htmlpreview.github.io/?https://github.com/riversword/Tic-Tac-Toe-Game/blob/master/index.html" target="_blank"><p><i class="fa fa-chain"></i>井字棋游戏</p></a>
+                    <div class="swiper-slide" style="background-image:url(image/works04.png)">
+                        <div class="describe">
+                        <a href="http://www.riverjean.com/Tic-Tac-Toe-Game/" target="_blank"><p><i class="fa fa-chain"></i>井字棋游戏</p></a>
                         <p>JS 判断用户操作<i class="fa fa-code"></i></p>
+                        </div>
                     </div>
-                    <div class="viewWork displayHidden">
-                     <i class="fa fa-close"></i> 
-                     <p data-height="1000" data-theme-id="0" data-slug-hash="RLdmma" data-default-tab="result" data-user="riversword" class="codepen">See the Pen <a href="https://codepen.io/riversword/pen/RLdmma">Tic Tac Game [FCC]</a> by riversword (<a href="https://codepen.io/riversword">@RiverSword</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 workshow">
-                <div class="show">
-                    <div class="describe">
-                        <!-- <p>A Pomodoro Clock.</p> -->
+                    <div class="swiper-slide" style="background-image:url(image/works05.jpg)">
+                        <div class="describe">
                         <a href="http://htmlpreview.github.io/?https://github.com/riversword/Pomodoro-Clock/blob/master/Pomodoro%20Clock.html" target="_blank"><p><i class="fa fa-chain"></i>番茄计时器</p></a>
                         <p>JS定时器，CSS3动画<i class="fa fa-code"></i></p>
+                        </div>
                     </div>
-                    <div class="viewWork displayHidden">
-                     <i class="fa fa-close"></i> 
-                     <p data-height="1000" data-theme-id="0" data-slug-hash="wrxVRx" data-default-tab="result" data-user="riversword" class="codepen">See the Pen <a href="https://codepen.io/riversword/pen/wrxVRx">Pomodoro Clock [FCC]</a> by riversword (<a href="https://codepen.io/riversword">@RiverSword</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 workshow">
-                <div class="show">
-                    <div class="describe">
-                        <!-- <p>It's Simon Game, look the button light one by one, then click them in the correct order.</p> -->
-                        <a href="http://htmlpreview.github.io/?https://github.com/riversword/Simon-Game/blob/master/index.html" target="_blank"><p>西蒙游戏</p></a>
+                    <div class="swiper-slide" style="background-image:url(image/works06.jpg)">
+                        <div class="describe">
+                        <a href="http://www.riverjean.com/Simon-Game/" target="_blank"><p>西蒙游戏</p></a>
                         <p>HTML5 audio<i class="fa fa-code"></i></p>
+                        </div>
                     </div>
-                    <div class="viewWork displayHidden">
-                     <i class="fa fa-close"></i> 
-                     <p data-height="1000" data-theme-id="0" data-slug-hash="ZXPvWQ" data-default-tab="result" data-user="riversword" class="codepen">See the Pen <a href="https://codepen.io/riversword/pen/ZXPvWQ">Simon Game [FCC]</a> by riversword (<a href="https://codepen.io/riversword">@RiverSword</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 workshow">
-                <div class="show">
-                    <div class="describe">
-                        <!-- <p>A tribute page to our hero, Bruce Lee.</p> -->
-                        <a href="http://htmlpreview.github.io/?https://github.com/riversword/A-Tribute-Page-Of-Bruce-Lee/blob/master/index.html" target="_blank"><p><i class="fa fa-chain"></i>李小龙致敬页</p></a>
+                    <div class="swiper-slide" style="background-image:url(image/works07.jpg)">
+                        <div class="describe">
+                        <a href="http://www.riverjean.com/A-Tribute-Page-Of-Bruce-Lee/" target="_blank"><p><i class="fa fa-chain"></i>李小龙致敬页</p></a>
                         <p>Bootstrap网格布局<i class="fa fa-code"></i></p>
+                        </div>
                     </div>
-                    <div class="viewWork displayHidden">
-                     <i class="fa fa-close"></i> 
-                     <p data-height="1000" data-theme-id="0" data-slug-hash="NAEKkk" data-default-tab="result" data-user="riversword" class="codepen">See the Pen <a href="https://codepen.io/riversword/pen/NAEKkk">A Tribute Page [FCC]</a> by riversword (<a href="https://codepen.io/riversword">@RiverSword</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 workshow">
-                <div class="show">
-                    <div class="describe">
-                        <!-- <p>Use Twitchtv API to check who is on online.</p> -->
+                    <div class="swiper-slide" style="background-image:url(image/works08.jpg)">
+                        <div class="describe">
                         <a href="https://htmlpreview.github.io/?https://github.com/riversword/Use-the-Twitchtv-JSON-API/blob/master/index.html" target="_blank"><p><i class="fa fa-chain"></i>Twitchtv 直播查询</p></a>
                         <p>调用twitch API，AJAX获取数据，对JSON格式数据处理、展示。<i class="fa fa-code"></i></p>
+                        </div>
                     </div>
-                    <div class="viewWork displayHidden">
-                     <i class="fa fa-close"></i> 
-                     <p data-height="1000" data-theme-id="0" data-slug-hash="xXQYKv" data-default-tab="result" data-user="riversword" class="codepen">See the Pen <a href="https://codepen.io/riversword/pen/xXQYKv">Use the Twitchtv JSON API [FCC]</a> by riversword (<a href="https://codepen.io/riversword">@RiverSword</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 workshow">
-                <div class="show">
-                    <div class="describe">
-                        <!-- <p>A wikipedia viewer, to look for some information on WiKi.</p> -->
-                        <a href="https://htmlpreview.github.io/?https://github.com/riversword/wikipedia-viewer/blob/master/index.html" target="_blank"><p><i class="fa fa-chain"></i>wiki搜索器</p></a>
+                    <div class="swiper-slide" style="background-image:url(image/works09.jpg)">
+                        <div class="describe">
+                        <a href="http://htmlpreview.github.io/?https://github.com/riversword/wikipedia-viewer/blob/master/index.html" target="_blank"><p><i class="fa fa-chain"></i>wiki搜索器</p></a>
                         <p>调用wiki API，AJAX获取数据，CSS3动画。<i class="fa fa-code"></i></p>
-                    </div>
-                    <div class="viewWork displayHidden">
-                     <i class="fa fa-close"></i> 
-                     <p data-height="1000" data-theme-id="0" data-slug-hash="jGPaOm" data-default-tab="result" data-user="riversword" class="codepen">See the Pen <a href="https://codepen.io/riversword/pen/jGPaOm">a wikipedia viewer [FCC]</a> by riversword (<a href="https://codepen.io/riversword">@RiverSword</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                        </div>
                     </div>
                 </div>
+
+                <div class="swiper-button-prev mobile-hide"></div>
+                <div class="swiper-button-next mobile-hide"></div>
+                <div class="swiper-pagination experience-pagination"></div>
+
+                </div>
+                <p class="more"><a href="https://github.com/riversword?tab=repositories" target="_blank">更多作品&nbsp;<i class="fa fa-angle-double-right"></i> </a></p>
+                 
+
             </div>
-
+            <div class="swiper-slide" id="contact">
+                <!--<div>
+                    <h3>文章</h3>
+                    <div class="articleBox">
+                        <article>
+                            <h4>标题</h4>
+                            <p>内容内容内容内容内容内容内容内容内容</p>
+                            <span>日期</span>
+                        </article>
+                        <article>
+                            <h4>标题</h4>
+                            <p>setTimeout和setInterval的运行机制是，将指定的代码移出本次执行，等到下一轮Event Loop时，再检查是否到了指定时间。如果到了，就执行对应的代码；如果不到，就等到再下一轮Event Loop时重新判断。这意味着，setTimeout指定的代码，必须等到本次执行的所有代码都执行完，才会执行</p>
+                            <span>日期</span>
+                        </article>
+                        <article>
+                            <h4>标题</h4>
+                            <p>内容内容内容内容内容内容内容内容内容</p>
+                            <span>日期</span>
+                        </article>
+                        <article>
+                            <h4>标题</h4>
+                            <p>内容内容内容内容内容内容内容内容内容</p>
+                            <span>日期</span>
+                        </article>
+                        <article>
+                            <h4>标题</h4>
+                            <p>内容内容内容内容内容内容内容内容内容</p>
+                            <span>日期</span>
+                        </article>
+                        <article>
+                            <h4>标题</h4>
+                            <p>内容内容内容内容内容内容内容内容内容</p>
+                            <span>日期</span>
+                        </article>
+                    </div>
+                </div>-->
+                 <div>
+                <h3>联系我</h3>
+                <p>如果你也对前端技术感兴趣，欢迎致邮件联系交流；若是你还热爱画画，单车，旅行，电影，cooking，我想我们会有很多话题可以聊</p>
+                <p>当然，最期待的还是能与你共事。</p>
+                <div class="contact-icon">
+                    <a href="mailto:newjean@163.com?Subject=Hello" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://github.com/riversword" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://codepen.io/riversword/" target="_blank"><i class="fa fa-codepen"></i></a>
+                    <a href="https://weibo.com/u/5362581839/home?wvr=5" target="_blank"><i class="fa fa-weibo"></i></a>
+                </div>
+                </div> 
+            </div>
         </div>
-      </div>
-    </div>
- </section>
- 
- <!--contact-->
- <section id="contact">
-    <h2 class="text-center">联系我</h2>
-    <!-- <p>Hi, friend, if you have any suggests for my web page, or want to talk about web technology, just leave me a email. I will reply soon.</p> -->
-    <div class="icons">
-        <p>
-            <a href="mailto:new_jean@outlook.com?Subject=Hello" target="_top"><i class="fa fa-envelope">&nbsp;&nbsp;</i>new_jean@outlook.com</a>
-        </p>
-        <br>
-        <p>
-            <a href="https://github.com/riversword"><i class="fa fa-github"></i></a>
-            <a href="https://codepen.io/riversword/"><i class="fa fa-codepen"></i></a>
-            <a href="https://www.freecodecamp.cn/riversword"><i class="fa fa-free-code-camp"></i></a>
-        </p>
-    </div>
-    <div class="footer">
-      <p>&copy; riversword 2017</p>
-    </div>
- </section> 
-
+        <div class="swiper-pagination main-pagination"></div>
 </div>
- 
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-<!-- <script async src="//assets.codepen.io/assets/embed/ei.js"></script> -->
-<!-- <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> -->
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="personal web page.js"></script>
+
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src='js/main.js'></script>
 </body>
 <html>
