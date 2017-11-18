@@ -1,1 +1,22 @@
-/*交互动画*/
+/*css动画*/
+.shink{
+	-webkit-animation: shink 1s linear infinite 0s;
+    -moz-animation: shink 1s linear infinite 0s;
+    -o-animation: shink 1s linear infinite 0s;
+    -ms-animation: shink 1s linear infinite 0s;
+    animation: shink 1s linear infinite 0s;
+}
+
+@-webkit-keyframes shink { 
+    0% { opacity: 1;
+    -webkit-animation-timing-function: ease-in; }
+    50% { opacity: 1 }
+    50.01% { opacity: 0;
+    -webkit-animation-timing-function: ease-out; }
+    100% { opacity: 0 }
+}
+
+
+.display-none{
+	display: none;
+}
