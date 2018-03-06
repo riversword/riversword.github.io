@@ -25,9 +25,9 @@
         <ul>
             <li class="choose">首页</li>
             <li>关于我</li>
+            <li>经历</li>
             <li>技能</li>
             <li>项目作品</li>
-            <li>联系我</li>
         </ul>
         <div class="music-icon">
             <div>
@@ -39,8 +39,8 @@
 </div>
 
 <div class="swiper-container" id="main">
-        <div class="swiper-wrapper" id="home">
-            <div class="swiper-slide">
+        <div class="swiper-wrapper" >
+            <div class="swiper-slide" id="home">
                 <div>
                     <h1><span></span> <span class="shink">_</span> </h1>
                     <p><span></span> <span class="shink display-none">_</span> </p>
@@ -60,17 +60,84 @@
                     <div class="infoBox">
                         <p>&nbsp;<i class="fa fa-graduation-cap">&nbsp; 教育</i> 武汉科技大学/本科</p>
                         <p>&nbsp;<i class="fa fa-envelope">&nbsp; 邮箱</i><a href="mailto:newjean@163.com?Subject=Hello" target="_blank"> newjean@163.com</a></p>
-                        <p>&nbsp;<i class="fa fa-phone">&nbsp; 电话</i> 138-2233-5864</p>
+                        <!-- <p>&nbsp;<i class="fa fa-phone">&nbsp; 电话</i> 138-2233-5864</p>
                         <p>&nbsp;<i class="fa fa-map-marker">&nbsp; 居住地</i> 广东/佛山</p>
-                        <p>&nbsp;<i class="fa fa-birthday-cake">&nbsp; 年龄</i> 25</p>
+                        <p>&nbsp;<i class="fa fa-birthday-cake">&nbsp; 年龄</i> 25</p> -->
                         <p>&nbsp;<i class="fa fa-clock-o">&nbsp; 状态</i> 在职</p>
                     </div>
 
-                    <p>2012.9~2016.6，武汉科技大学(一本)，本科学历，机械自动化专业。&nbsp;通过计算机二级（C语言），计算机三级（网络技术），CET6。湖北省一等奖，绘画一等奖...</p> 
-                    <p>在机械行业担任质量工程师1年</p>
+                    <p>您好，我叫刘剑，25岁，坐标佛山。 我并不是计算机专业出身，但对前端很感兴趣，所以自学了前端，今后的职业规划是朝着全栈发展，目前在学Node.js、Vue.js。 </p>
+                    <p>现就职于佛山市丰川节能科技有限公司，本人在公司主要负责整个页面的前端开发，配合后台人员实现产品前端界面效果与功能。写过响应式页面，移动端页面，pc端页面。</p>
+                    <!-- <p>2012.9~2016.6，武汉科技大学(一本)，本科学历，机械自动化专业。&nbsp;通过计算机二级（C语言），计算机三级（网络技术），CET6。湖北省一等奖，绘画一等奖...</p> 
+                    <p>在机械行业担任质量工程师1年</p> -->
                     
                 </div>
             </div>
+
+            <div class="swiper-slide" id="experience">
+                <div class="experience-info">
+                    <h3>经历</h3>
+
+                    <ul>
+                        <li id="experience-1">
+                            <div class="experience-info-left">
+                                <p>2017/11</p>
+                            </div>
+                            <div class="experience-info-right">
+                                <div class="experience-info-right-box">
+                                    <header class="company-title">
+                                        <h4>丰川节能科技有限公司</h4> 
+                                        <p> < web前端工程师 > </p>
+                                    </header>
+                                    <section class="experience-content">
+                                        <p>负责能源管理平台的前端开发，利用到 HTML5、CSS3、JavaScript、jQuery、Highcharts 等技术 。</p>
+                                        <p>该能管监测管理网站，实现了实时的数据监控、数据可视化分析对比、导出生成excel表格、 数据筛选排序等功能。</p>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="clear-float"></div>
+                        </li>
+
+                        <li id="experience-2">
+                            <div class="experience-info-left">
+                                <p>2016/07</p>
+                            </div>
+                            <div class="experience-info-right">
+                                <div class="experience-info-right-box">
+                                    <header class="company-title">
+                                        <h4>广东大冶摩托车有限公司</h4> 
+                                        <p> <质量工程师> </p>
+                                    </header>
+                                    <section class="experience-content">
+                                        <p>业余时间通过FreeCodeCamp学习前端知识，啃《JavaScript忍者秘籍》。</p>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="clear-float"></div>
+                        </li>
+
+                        <li id="experience-3">
+                            <div class="experience-info-left">
+                                <p>2016/06</p>
+                            </div>
+                            <div class="experience-info-right">
+                                <div class="experience-info-right-box">
+                                    <header class="company-title">
+                                        <h4>毕业于武汉科技大学</h4> 
+                                        <p> <本科> </p>
+                                    </header>
+                                    <section class="experience-content">
+                                        <p>通过大学计算机二级(C语言)、计算机三级(网络技术)、CET6</p>
+                                        <p>获 三维数字建模大赛 湖北省一等奖、院绘画比赛 一等奖、奖学金、优秀学生干部...</p>
+                                    </section>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+
             <div class="swiper-slide" id="skills">
                 <div>
                     <h3>技能</h3>
@@ -110,9 +177,9 @@
 
                 </div>
             </div>
-            <div class="swiper-slide" id="experience">
+            <div class="swiper-slide" id="works">
                 
-                <div class="swiper-container" id="experience-box">
+                <div class="swiper-container" id="works-box">
                      <h3>项目作品</h3>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="background-image:url(image/tulin.jpg)">
@@ -185,14 +252,14 @@
 
                 <div class="swiper-button-prev mobile-hide"></div>
                 <div class="swiper-button-next mobile-hide"></div>
-                <div class="swiper-pagination experience-pagination"></div>
+                <div class="swiper-pagination works-pagination"></div>
 
                 </div>
                 <p class="more"><a href="https://github.com/riversword?tab=repositories" target="_blank">更多作品&nbsp;<i class="fa fa-angle-double-right"></i> </a></p>
                  
 
             </div>
-            <div class="swiper-slide" id="contact">
+            <!-- <div class="swiper-slide" id="contact"> -->
                 <!--<div>
                     <h3>文章</h3>
                     <div class="articleBox">
@@ -228,7 +295,7 @@
                         </article>
                     </div>
                 </div>-->
-                 <div>
+                 <!-- <div>
                 <h3>联系我</h3>
                 <p>如果你也对前端技术感兴趣，欢迎致邮件联系交流；若是你还热爱画画，单车，旅行，电影，cooking，我想我们会有很多话题可以聊</p>
                 <p>当然，最期待的还是能与你共事。</p>
@@ -239,7 +306,7 @@
                     <a href="https://weibo.com/u/5362581839/home?wvr=5" target="_blank"><i class="fa fa-weibo"></i></a>
                 </div>
                 </div> 
-            </div>
+            </div> -->
         </div>
         <div class="swiper-pagination main-pagination"></div>
 </div>

@@ -2,7 +2,7 @@ window.onload=function(){
 
 	//console.log('window.innerWidth'+window.innerWidth);//浏览器窗口大小,chrome
 	var mainSwiper,
-		experienceSwiper,
+		worksSwiper,
 		lastSize=window.innerWidth;
 
 	var music=new audioPlay('audio/guduxunli.mp3');//new Audio('audio/AlanWalker-Fade.mp3');//在注意此处文件路径是相对于html文件
@@ -127,9 +127,9 @@ window.onload=function(){
 
 
 		if(window.innerWidth>460){
-			experienceSwiper=new Swiper('#experience-box',{
+			worksSwiper=new Swiper('#works-box',{
 				keyboardControl : true,
-				pagination: '.experience-pagination',
+				pagination: '.works-pagination',
         		effect: 'coverflow',
         		centeredSlides: true,
         		slidesPerView: 'auto',
@@ -146,10 +146,10 @@ window.onload=function(){
 				nextButton:'.swiper-button-next'
 			});
 
-			// experienceSwiper.effect='coverflow';
-			// experienceSwiper.centeredSlides= true;
-   //      	experienceSwiper.slidesPerView= 'auto';
-   //      	experienceSwiper.coverflow={
+			// worksSwiper.effect='coverflow';
+			// worksSwiper.centeredSlides= true;
+   //      	worksSwiper.slidesPerView= 'auto';
+   //      	worksSwiper.coverflow={
    //      		    rotate: 50,
    //      		    stretch: 0,
    //      		    depth: 100,
@@ -158,8 +158,8 @@ window.onload=function(){
    //      		};
 
 		}else{
-			experienceSwiper=new Swiper('#experience-box',{
-				pagination: '.experience-pagination',
+			worksSwiper=new Swiper('#works-box',{
+				pagination: '.works-pagination',
 				paginationClickable: true,
 				effect : 'cube',
 				cube: {
@@ -171,15 +171,15 @@ window.onload=function(){
 				loop:true,
 			});
 			//
-			// experienceSwiper.effect ='cube';
-			// experienceSwiper.cube={
+			// worksSwiper.effect ='cube';
+			// worksSwiper.cube={
 			// 	  	slideShadows: true,
 			// 	  	shadow: true,
 			// 	  	shadowOffset: 20,
 			// 	  	shadowScale: 0.94
 			// 	};
-			// experienceSwiper.centeredSlides= false;
-   //      	experienceSwiper.slidesPerView= 0;
+			// worksSwiper.centeredSlides= false;
+   //      	worksSwiper.slidesPerView= 0;
 
 		}
 

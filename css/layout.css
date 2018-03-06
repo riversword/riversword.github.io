@@ -6,6 +6,8 @@
 html,body{
 	position: relative;
 	height: 100%;
+
+
 }
 html{
 	font-size: 625%;/*100 ÷ 16 × 100% = 625%,100px*/
@@ -335,6 +337,77 @@ h3{
 }
 
 
+
+#experience{}
+
+#experience li{
+	list-style: none;
+}
+
+.experience-info{
+	width: 90%;
+	min-width: 760px;
+	border: 1px rgb(255,0,0) solid;
+}
+
+.experience-info-left{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+
+	width: 30%;
+	float: left;
+	background-color: rgba(0,200,250,0.3);
+}
+.experience-info-left p{
+	text-align: right;
+}
+
+.experience-info-right{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+
+	width: 70%;
+	float: right;
+	text-align: left;
+	background-color: rgba(200,200,0,0.3);
+
+	padding: 20px 20px;
+	border-left: 5px rgba(0,0,0,0.5) solid;
+}
+.experience-content p{
+	font-size: .14rem;
+	text-align: left;
+	/*text-indent: 2em;*/
+}
+
+.company-title h4{
+	font-size: .24rem;
+}
+.company-title p{
+	height: .24rem;
+	line-height: .24rem;
+	text-indent: 2em;
+}
+
+#experience-1{
+	/*height: 120px;*/
+}
+
+#experience-2 h4{
+	font-size: .2rem;
+}
+
+.clear-float{
+	clear: both;
+}
+
+
+
+
+
+
 #skills{
 
 	background: url(../image/bg04.jpg) center no-repeat;
@@ -418,32 +491,32 @@ h3{
 	color: rgb(255,255,255);
 }
 
-#experience{
+#works{
 	background: url(../image/bg03.jpg) center no-repeat;
 	background-size: cover;
 	flex-direction: column;
 }
 
-#experience-box{
+#works-box{
 	height: auto;
 	width: 100%;
 	padding-bottom: .2rem;
 }
-#experience-box h3{
+#works-box h3{
 	margin-bottom: .2rem;
 }
 
-#experience-box .swiper-wrapper .swiper-slide{
+#works-box .swiper-wrapper .swiper-slide{
 	height: 4rem;
 	width: 4rem;
 	background-position: center;
     background-size: cover;
 }
 
-#experience .more{
+#works .more{
 	margin-top: .2rem;
 }
-#experience .more a{
+#works .more a{
 	color: rgb(0,0,0);
 }
 
@@ -466,7 +539,7 @@ h3{
 	color:inherit;
 }
 
-.experience-pagination{
+.works-pagination{
 	margin-bottom: -.1rem;
 }
 .swiper-button-prev{
@@ -597,7 +670,7 @@ h3{
 
 
 
-#experience-box .swiper-wrapper .swiper-slide{
+#works-box .swiper-wrapper .swiper-slide{
 	/*height: 400px;
 	width: 400px;*/
 	/*height: 4rem;
@@ -762,7 +835,7 @@ h3{
 	/*font-size: .16rem;*/
 }
 
-#experience{
+#works{
 	/*background: url(../image/bg03.jpg) center no-repeat;
 	background-size: cover;*/
 	background-image: none;
