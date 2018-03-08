@@ -710,6 +710,11 @@ h3{
 	width: 1.5rem;
 	height: 1.5rem;
 }
+#about .content{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(250,250,200,.5);
+}
 
 #about .infoBox{
 	/*display: flex;
@@ -720,6 +725,18 @@ h3{
 	justify-content: center;*/
 	/*width: 550px;*/
 	width: 90%;
+	font-size: .16rem;
+}
+#about .infoBox p{
+	/*width: 250px;
+	height: .35rem;
+	line-height: .35rem;
+	text-align: left;
+	color: rgb(255,255,255);*/
+
+	height: .25rem;
+	line-height: .25rem;
+	
 }
 
 #me-describe>p{
@@ -731,6 +748,7 @@ h3{
 	text-align: justify;*/
 	width: 90%;
 }
+
 
 #experience li{
 	/*list-style: none;
