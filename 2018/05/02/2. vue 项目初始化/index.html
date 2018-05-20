@@ -79,18 +79,22 @@
 
 
 
-<meta name="description" content="Vue父子组件通信子组件 Counter.vue  内容： 1234567891011121314151617181920212223242526&amp;lt;template&amp;gt;&amp;lt;div&amp;gt; &amp;lt;!--注意组件必须要有一个根元素，如此处的div标签--&amp;gt;    &amp;lt;button v-on:click=&quot;increase&quot;&amp;gt;+&amp;lt;/button&amp;gt;    &amp;lt">
+<meta name="description" content="vue 项目初始化安装安装淘宝镜像： 1npm install -g cnpm --registry=https://registry.npm.taobao.org 安装 vue ： 1cnpm install vue --save  vue-cli 构建 SPA 应用： 123npm install -g vue-clivue init webpack-simple demovue init w">
 <meta name="keywords" content="Vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vue父子组件通信">
-<meta property="og:url" content="http://riversword.github.io/2018/05/16/vue子组件向父组件传递数据/index.html">
+<meta property="og:title" content="vue 项目初始化">
+<meta property="og:url" content="http://riversword.github.io/2018/05/02/2. vue 项目初始化/index.html">
 <meta property="og:site_name" content="New Jean&#39;s log">
-<meta property="og:description" content="Vue父子组件通信子组件 Counter.vue  内容： 1234567891011121314151617181920212223242526&amp;lt;template&amp;gt;&amp;lt;div&amp;gt; &amp;lt;!--注意组件必须要有一个根元素，如此处的div标签--&amp;gt;    &amp;lt;button v-on:click=&quot;increase&quot;&amp;gt;+&amp;lt;/button&amp;gt;    &amp;lt">
+<meta property="og:description" content="vue 项目初始化安装安装淘宝镜像： 1npm install -g cnpm --registry=https://registry.npm.taobao.org 安装 vue ： 1cnpm install vue --save  vue-cli 构建 SPA 应用： 123npm install -g vue-clivue init webpack-simple demovue init w">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-17T15:00:12.225Z">
+<meta property="og:image" content="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_112327.png">
+<meta property="og:image" content="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_112557.png">
+<meta property="og:image" content="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_113912.png">
+<meta property="og:updated_time" content="2018-05-20T06:28:32.468Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vue父子组件通信">
-<meta name="twitter:description" content="Vue父子组件通信子组件 Counter.vue  内容： 1234567891011121314151617181920212223242526&amp;lt;template&amp;gt;&amp;lt;div&amp;gt; &amp;lt;!--注意组件必须要有一个根元素，如此处的div标签--&amp;gt;    &amp;lt;button v-on:click=&quot;increase&quot;&amp;gt;+&amp;lt;/button&amp;gt;    &amp;lt">
+<meta name="twitter:title" content="vue 项目初始化">
+<meta name="twitter:description" content="vue 项目初始化安装安装淘宝镜像： 1npm install -g cnpm --registry=https://registry.npm.taobao.org 安装 vue ： 1cnpm install vue --save  vue-cli 构建 SPA 应用： 123npm install -g vue-clivue init webpack-simple demovue init w">
+<meta name="twitter:image" content="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_112327.png">
 
 
 
@@ -120,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://riversword.github.io/2018/05/16/vue子组件向父组件传递数据/"/>
+  <link rel="canonical" href="http://riversword.github.io/2018/05/02/2. vue 项目初始化/"/>
 
 
 
 
 
-  <title>Vue父子组件通信 | New Jean's log</title>
+  <title>vue 项目初始化 | New Jean's log</title>
   
 
 
@@ -253,7 +257,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/16/vue子组件向父组件传递数据/">
+    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/02/2. vue 项目初始化/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="New Jean">
@@ -270,7 +274,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Vue父子组件通信</h2>
+          <h2 class="post-title" itemprop="name headline">vue 项目初始化</h2>
         
 
         <div class="post-meta">
@@ -282,8 +286,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-16T22:53:08+08:00">
-                2018-05-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T23:23:34+08:00">
+                2018-05-02
               </time>
             
 
@@ -344,11 +348,29 @@
       
 
       
-        <h2 id="Vue父子组件通信"><a href="#Vue父子组件通信" class="headerlink" title="Vue父子组件通信"></a>Vue父子组件通信</h2><p>子组件 <code>Counter.vue</code>  内容：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span> <span class="comment">&lt;!--注意组件必须要有一个根元素，如此处的div标签--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"increase"</span>&gt;</span>+<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"decrease"</span>&gt;</span>-<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span> <span class="tag">&lt;<span class="name">span</span>&gt;</span>父传递到子组件的值&#123;&#123;deliverNum&#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span> <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span> <span class="tag">&lt;<span class="name">span</span>&gt;</span>子组件值&#123;&#123;num&#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span> <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">export</span> <span class="keyword">default</span>&#123;</span></span><br><span class="line"><span class="javascript">        props: [<span class="string">"deliverNum"</span>], <span class="comment">//注意此处的deliverNum即父组件传入的deliverNum，要写相同</span></span></span><br><span class="line"><span class="undefined">        data() &#123;</span></span><br><span class="line"><span class="javascript">            <span class="keyword">return</span> &#123;</span></span><br><span class="line"><span class="undefined">                num: 0</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;,</span></span><br><span class="line"><span class="undefined">        methods: &#123;</span></span><br><span class="line"><span class="javascript">            increase: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.$emit(<span class="string">"incre"</span>);</span></span><br><span class="line"><span class="undefined">            &#125;,</span></span><br><span class="line"><span class="javascript">            decrease: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.$emit(<span class="string">"decre"</span>);</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>父组件 <code>Hello.vue</code> 内容：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"hello"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>&#123;&#123;msg&#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Counter</span> <span class="attr">v-bind:deliverNum</span>=<span class="string">"parentNum"</span> <span class="attr">v-on:incre</span>=<span class="string">"increment"</span> <span class="attr">v-on:decre</span>=<span class="string">"decrement"</span>&gt;</span><span class="tag">&lt;/<span class="name">Counter</span>&gt;</span>  <span class="comment">&lt;!--动态传值，加上v-bind--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>父组件的值&#123;&#123;parentNum&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">import</span> Counter <span class="keyword">from</span> <span class="string">"./Counter.vue"</span></span></span><br><span class="line"><span class="javascript">    <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line"><span class="javascript">        name: <span class="string">"hello"</span>,</span></span><br><span class="line"><span class="undefined">        data () &#123;</span></span><br><span class="line"><span class="javascript">            <span class="keyword">return</span> &#123;</span></span><br><span class="line"><span class="undefined">                parentNum: 10,</span></span><br><span class="line"><span class="javascript">                msg: <span class="string">"welcome to your vue.js app"</span></span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;,</span></span><br><span class="line"><span class="undefined">        components: &#123;</span></span><br><span class="line"><span class="undefined">            Counter</span></span><br><span class="line"><span class="undefined">        &#125;,</span></span><br><span class="line"><span class="undefined">        methods: &#123;</span></span><br><span class="line"><span class="javascript">            increment: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.parentNum++;</span></span><br><span class="line"><span class="undefined">            &#125;,</span></span><br><span class="line"><span class="javascript">            decrement: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.parentNum--;</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>当点击 <code>+</code> 时，首先执行子组件内的方法 <code>increase</code> ，该方法会触发父组件的 <code>incre</code> 事件，进而执行父组件中的  <code>increment</code> 方法，令 parentNum++ ，同时 <code>deliverNum=&quot;parentNum&quot;</code> 又将 parentNum 传入子组件进行更新。</p>
+        <h3 id="vue-项目初始化"><a href="#vue-项目初始化" class="headerlink" title="vue 项目初始化"></a>vue 项目初始化</h3><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装淘宝镜像：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https:<span class="comment">//registry.npm.taobao.org</span></span><br></pre></td></tr></table></figure>
+<p>安装 vue ：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install vue --save</span><br></pre></td></tr></table></figure>
+<p> vue-cli 构建 SPA 应用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g vue-cli</span><br><span class="line">vue init webpack-simple demo</span><br><span class="line">vue init webpack demo2</span><br></pre></td></tr></table></figure>
+<h3 id="vue-init-webpack-simple-demo"><a href="#vue-init-webpack-simple-demo" class="headerlink" title="vue init webpack-simple demo"></a>vue init webpack-simple demo</h3><p>使用 <code>vue init webpack-simple demo</code>  时生成的文件目录：</p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_112327.png" alt=""></p>
+<h3 id="vue-init-webpack-demo"><a href="#vue-init-webpack-demo" class="headerlink" title="vue init webpack demo"></a>vue init webpack demo</h3><p>使用 <code>vue init webpack demo</code>  时生成的文件目录：</p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_112557.png" alt=""></p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_113912.png" alt=""></p>
+<p><code>/build</code>  打包配置文件；</p>
+<p> <code>/config</code> 项目配置文件；</p>
+<p><code>/dist</code> 存放 run build 打包生成的文件 ；</p>
+<p><code>/node_modules</code>  npm 安装的模块；</p>
+<p> <code>/src</code> 项目源代码， <code>/src/App.vue</code>  入口组件， <code>/src/main.js</code>  项目入口文件；<code>/static</code> 图片等静态资源；</p>
+<p><code>.babelrc</code> 解析es6语法的配置；</p>
+<p><code>.editorconfig</code> 编辑器的配置；</p>
+<p><code>.gitignore</code> 配置 git 提交时忽略的文件；</p>
+<p><code>.postcssrc.js</code> 配置 html 添加前缀；</p>
+<p><code>index.html</code> 单页面入口；</p>
+<p><code>package-lock.json</code> 项目描述（指定依赖源）；</p>
+<p><code>package.json</code> 项目描述；</p>
 
       
     </div>
@@ -408,8 +430,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/14/服务器项目部署（一）/" rel="next" title="服务器项目部署（一）">
-                <i class="fa fa-chevron-left"></i> 服务器项目部署（一）
+              <a href="/2018/05/02/1.vue概览/" rel="next" title="Vue 核心概览">
+                <i class="fa fa-chevron-left"></i> Vue 核心概览
               </a>
             
           </div>
@@ -417,6 +439,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/14/服务器项目部署（一）/" rel="prev" title="服务器项目部署（一）">
+                服务器项目部署（一） <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -571,7 +597,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue父子组件通信"><span class="nav-number">1.</span> <span class="nav-text">Vue父子组件通信</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#vue-项目初始化"><span class="nav-number">1.</span> <span class="nav-text">vue 项目初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vue-init-webpack-simple-demo"><span class="nav-number">3.</span> <span class="nav-text">vue init webpack-simple demo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vue-init-webpack-demo"><span class="nav-number">4.</span> <span class="nav-text">vue init webpack demo</span></a></li></ol></div>
             
 
           </div>
