@@ -570,7 +570,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/02/2. vue 项目初始化/">
+    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/04/5.-ES6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="New Jean">
@@ -589,7 +589,7 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/02/2. vue 项目初始化/" itemprop="url">vue 项目初始化</a></h2>
+                <a class="post-title-link" href="/2018/05/04/5.-ES6/" itemprop="url">5. ES6</a></h2>
         
 
         <div class="post-meta">
@@ -601,7 +601,497 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T23:23:34+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-04T22:32:13+08:00">
+                2018-05-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h2><h3 id="函数的-Rest-参数和扩展"><a href="#函数的-Rest-参数和扩展" class="headerlink" title="函数的 Rest 参数和扩展"></a>函数的 Rest 参数和扩展</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">x,y,z</span>) </span>&#123; <span class="comment">//es5</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">let</span> total = <span class="number">0</span>;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">if</span> (x) total += x;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">if</span> (y) total += y;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">if</span> (z) total += z;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">"total"</span>, total);</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="javascript">    sum(<span class="number">1</span>, <span class="string">""</span>, <span class="number">5</span>);</span></span><br><span class="line"><span class="undefined">	</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">esSum</span>(<span class="params">...m</span>) </span>&#123;<span class="comment">// 此处的...m表示rest参数，动态参数 不确定参数的个数 //es6</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">let</span> es_total = <span class="number">0</span>;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">of</span> m)&#123; <span class="comment">//遍历m //es6</span></span></span><br><span class="line"><span class="undefined">            es_total += i;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">"es_total"</span>, es_total);</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    esSum(2,3,4,6);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> esSum3 = <span class="function">(<span class="params">...m</span>)=&gt;</span>&#123;<span class="comment">//箭头函数 //es6</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">let</span> es_total = <span class="number">0</span>;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">of</span> m)&#123; <span class="comment">//遍历m //es6</span></span></span><br><span class="line"><span class="undefined">            es_total += i;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">"es_total"</span>, es_total);</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    esSum3(2,3,4,6);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> [x, y] = [<span class="number">4</span>, <span class="number">8</span>];</span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log([<span class="number">4</span>, <span class="number">8</span>]);</span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(...[<span class="number">4</span>, <span class="number">8</span>]); <span class="comment">//数组扩展，...与数组在一起时，会进行运算将数组拆解</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> arr1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> arr2 = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>];</span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(arr1.concat(arr2));</span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log([...arr1, ...arr2]);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> [a, ...b] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">console</span>.log(b); <span class="comment">// [2, 3, 4]</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> [a1, a2, a3] = <span class="string">"es6123"</span>;</span></span><br><span class="line"><span class="javascript">    <span class="comment">//a1="e"  a2="s"  a3="6"</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> b1 = [...<span class="string">"es6"</span>];</span></span><br><span class="line"><span class="javascript">    <span class="comment">//b1=["e", "s", "6"]</span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Promise-使用"><a href="#Promise-使用" class="headerlink" title="Promise 使用"></a>Promise 使用</h3><p>让函数的回调更简洁清晰</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> checkLogin = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="comment">//需要返回一个promise</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span> (<span class="params">resolve, reject</span>) </span>&#123; <span class="comment">//resolve 成功时执行  reject 报错时执行</span></span></span><br><span class="line"><span class="javascript">            <span class="keyword">let</span> flag = <span class="built_in">document</span>.cookie.indexOf(<span class="string">"userId"</span>) &gt; <span class="number">-1</span> ? <span class="literal">true</span> : <span class="literal">false</span> ;</span></span><br><span class="line"><span class="javascript">            <span class="keyword">if</span> (flag = <span class="literal">true</span>) &#123; <span class="comment">//flag传入默认值true</span></span></span><br><span class="line"><span class="undefined">                resolve(&#123;</span></span><br><span class="line"><span class="undefined">                    status: 0,</span></span><br><span class="line"><span class="javascript">                    result: <span class="literal">true</span></span></span><br><span class="line"><span class="undefined">                &#125;);</span></span><br><span class="line"><span class="javascript">            &#125; <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="javascript">                reject(<span class="string">"error"</span>);</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;);</span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">let</span> getUseInfo = <span class="function"><span class="params">()</span>=&gt;</span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>)=&gt;</span>&#123;</span></span><br><span class="line"><span class="javascript">            <span class="keyword">let</span> userInfo = &#123;</span></span><br><span class="line"><span class="javascript">                userId: <span class="string">"101"</span></span></span><br><span class="line"><span class="undefined">            &#125;;</span></span><br><span class="line"><span class="undefined">            resolve(userInfo);</span></span><br><span class="line"><span class="undefined">        &#125;);</span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="undefined">    </span></span><br><span class="line"><span class="javascript">    <span class="comment">//是promise才能用.then调用</span></span></span><br><span class="line"><span class="javascript">    checkLogin().then(<span class="function">(<span class="params">res</span>)=&gt;</span>&#123; <span class="comment">//处理第一个promise</span></span></span><br><span class="line"><span class="javascript">        <span class="keyword">if</span> (res.status == <span class="number">0</span>) &#123;</span></span><br><span class="line"><span class="javascript">            <span class="built_in">console</span>.log(<span class="string">"login succeed"</span>);</span></span><br><span class="line"><span class="javascript">            <span class="keyword">return</span> getUseInfo(); <span class="comment">//返回的是promise</span></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="javascript">    &#125;).catch(<span class="function">(<span class="params">error</span>)=&gt;</span>&#123; <span class="comment">//捕获第一个promse的错误</span></span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">"error"</span>,error);</span></span><br><span class="line"><span class="javascript">    &#125;).then(<span class="function">(<span class="params">res2</span>)=&gt;</span>&#123; <span class="comment">//处理第二个promise —— getUseInfo()</span></span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">"userId"</span>,res2.userId);</span></span><br><span class="line"><span class="undefined">    &#125;);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="comment">//同时调用多个请求，注意数组元素要为promise对象</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">Promise</span>.all([checkLogin(), getUseInfo()]).then(<span class="function">(<span class="params">[res1, res2]</span>)=&gt;</span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">"result1"</span>,res1.result);</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(<span class="string">"result2"</span>,res2.userId);</span></span><br><span class="line"><span class="undefined">    &#125;);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="模块化开发"><a href="#模块化开发" class="headerlink" title="模块化开发"></a>模块化开发</h3><p>module.exports 和 ES6 import / export 的使用</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span> </span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./App'</span></span><br><span class="line"><span class="keyword">import</span> &#123;currency&#125; <span class="keyword">from</span> <span class="string">'./util/currency.js'</span> <span class="comment">//导出若给了变量名，那么引入时需要加&#123;&#125;来接收</span></span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> jisuan <span class="keyword">from</span> <span class="string">'./es6ExportAndImport.js'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//currency.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">currency</span>(<span class="params"></span>)</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+<p>调用一个方法来加载文件</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--Counter.vue--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">export</span> <span class="keyword">default</span>&#123;</span></span><br><span class="line"><span class="undefined">        data()&#123;&#125;,</span></span><br><span class="line"><span class="undefined">        method:&#123;</span></span><br><span class="line"><span class="undefined">            increment()&#123;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">import</span>(<span class="string">'../util'</span>);</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="AMD、CMD、CommonJs-与-ES6"><a href="#AMD、CMD、CommonJs-与-ES6" class="headerlink" title="AMD、CMD、CommonJs 与 ES6"></a>AMD、CMD、CommonJs 与 ES6</h3><ul>
+<li>AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。（异步模块定义）</li>
+</ul>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_213315.png" alt=""></p>
+<ul>
+<li>CMD 是 SeaJS（淘宝）在推广过程中对模块定义的规范化产出。（同步模块定义）</li>
+</ul>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_213618.png" alt=""></p>
+<ul>
+<li>CommonJS规范 - module.exports，浏览器不支持，<strong>在后端中使用</strong>，Node.js 采用此规范。</li>
+</ul>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_213931.png" alt=""></p>
+<ul>
+<li><p>ES6 特性 export / import</p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_214207.png" alt=""></p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/03/4.-axios/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="New Jean">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="New Jean's log">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/03/4.-axios/" itemprop="url">4. axios</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-03T22:53:08+08:00">
+                2018-05-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="axios"><a href="#axios" class="headerlink" title="axios"></a>axios</h2><h3 id="axios-安装"><a href="#axios-安装" class="headerlink" title="axios 安装"></a>axios 安装</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://unpkg.com/axios/dist/axios.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install axios --save</span><br></pre></td></tr></table></figure>
+<h3 id="axios-API"><a href="#axios-API" class="headerlink" title="axios API"></a>axios API</h3><ul>
+<li>axios.request(config)</li>
+<li>axios.get(url[, config])</li>
+<li>axios.delete(url[, config])</li>
+<li>axios.head(url[, config])</li>
+<li>axios.options(url[, config])</li>
+<li>axios.post(url[, data[, config]])</li>
+<li>axios.put(url[, data[, config]])</li>
+<li>axios.patch(url[, data[, config]])</li>
+</ul>
+<h3 id="axios-基础"><a href="#axios-基础" class="headerlink" title="axios 基础"></a>axios 基础</h3><p>利用axios.all方法可同时调用多个接口：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getUserAccount</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> axios.get(<span class="string">'/user/12345'</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getUserPermissions</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> axios.get(<span class="string">'/user/12345/permissions'</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//利用.all方法可同时调用两个接口</span></span><br><span class="line">axios.all([getUserAccount(), getUserPermissions()]).then(axios.spread(<span class="function"><span class="keyword">function</span> (<span class="params">acct, perms</span>) </span>&#123;</span><br><span class="line">    <span class="comment">//Both requests are now complete</span></span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
+<p>axios 请求方法</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">        <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="javascript">            el: <span class="string">"#app"</span>,</span></span><br><span class="line"><span class="undefined">            data: &#123;</span></span><br><span class="line"><span class="javascript">                msg: <span class="string">''</span></span></span><br><span class="line"><span class="undefined">            &#125;,</span></span><br><span class="line"><span class="javascript">            mounted: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="comment">//全局拦截 拦截请求（请求发出前执行）</span></span></span><br><span class="line"><span class="javascript">                axios.interceptors.request.use(<span class="function"><span class="keyword">function</span>(<span class="params">config</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                    <span class="built_in">console</span>.log(<span class="string">"request init"</span>);</span></span><br><span class="line"><span class="javascript">                    <span class="keyword">return</span> config;</span></span><br><span class="line"><span class="undefined">                &#125;);</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">                <span class="comment">//全局拦截 拦截响应（响应返回前执行）</span></span></span><br><span class="line"><span class="javascript">                axios.interceptors.response.use(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                    <span class="built_in">console</span>.log(<span class="string">"response init"</span>);</span></span><br><span class="line"><span class="javascript">                    <span class="keyword">return</span> response;</span></span><br><span class="line"><span class="undefined">                &#125;);</span></span><br><span class="line"><span class="undefined">            &#125;,</span></span><br><span class="line"><span class="undefined">            methods: &#123;</span></span><br><span class="line"><span class="javascript">                get: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                    axios.get(<span class="string">"../package.json"</span>, &#123;</span></span><br><span class="line"><span class="undefined">                        params: &#123;</span></span><br><span class="line"><span class="javascript">                            userId: <span class="string">"999"</span></span></span><br><span class="line"><span class="undefined">                        &#125;,</span></span><br><span class="line"><span class="undefined">                        headers: &#123;</span></span><br><span class="line"><span class="javascript">                            token: <span class="string">"riversword"</span></span></span><br><span class="line"><span class="undefined">                        &#125;,</span></span><br><span class="line"><span class="javascript">                        before: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                            <span class="built_in">console</span>.log(<span class="string">"before init"</span>);</span></span><br><span class="line"><span class="undefined">                        &#125;</span></span><br><span class="line"><span class="javascript">                    &#125;).then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span></span><br><span class="line"><span class="javascript">                        <span class="keyword">this</span>.msg = res.data;</span></span><br><span class="line"><span class="javascript">                    &#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">error</span>) </span>&#123;<span class="comment">//捕获异常</span></span></span><br><span class="line"><span class="javascript">                        <span class="built_in">console</span>.log(<span class="string">"error="</span> + error);</span></span><br><span class="line"><span class="undefined">                    &#125;);</span></span><br><span class="line"><span class="undefined">                &#125;,</span></span><br><span class="line"><span class="javascript">                post: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                    axios.post(<span class="string">"../package.json"</span>, &#123;</span></span><br><span class="line"><span class="javascript">                        userId: <span class="string">"888"</span></span></span><br><span class="line"><span class="undefined">                    &#125;, &#123;</span></span><br><span class="line"><span class="undefined">                        headers: &#123;</span></span><br><span class="line"><span class="javascript">                            token: <span class="string">"riversword2"</span></span></span><br><span class="line"><span class="undefined">                        &#125;</span></span><br><span class="line"><span class="javascript">                    &#125;).then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span></span><br><span class="line"><span class="javascript">                        <span class="keyword">this</span>.msg = res.data;</span></span><br><span class="line"><span class="javascript">                    &#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">error</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                        <span class="built_in">console</span>.log(<span class="string">"error="</span> + error);</span></span><br><span class="line"><span class="undefined">                    &#125;);</span></span><br><span class="line"><span class="undefined">                &#125;,</span></span><br><span class="line"><span class="javascript">                http: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="undefined">                    axios(&#123;</span></span><br><span class="line"><span class="javascript">                        url: <span class="string">"../package.json"</span>,</span></span><br><span class="line"><span class="javascript">                        method: <span class="string">"get"</span>,</span></span><br><span class="line"><span class="javascript">                        params: &#123; <span class="comment">//get请求参数</span></span></span><br><span class="line"><span class="javascript">                            userId: <span class="string">"http-get"</span></span></span><br><span class="line"><span class="undefined">                        &#125;</span></span><br><span class="line"><span class="javascript">                        <span class="comment">// method: "post",</span></span></span><br><span class="line"><span class="javascript">                        <span class="comment">// data: &#123; //post请求参数</span></span></span><br><span class="line"><span class="javascript">                        <span class="comment">//     userId: "101"</span></span></span><br><span class="line"><span class="javascript">                        <span class="comment">// &#125;,</span></span></span><br><span class="line"><span class="undefined">                        headers: &#123;</span></span><br><span class="line"><span class="javascript">                            token: <span class="string">"riversword3"</span></span></span><br><span class="line"><span class="undefined">                        &#125;</span></span><br><span class="line"><span class="javascript">                    &#125;).then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span></span><br><span class="line"><span class="javascript">                        <span class="keyword">this</span>.msg = res.data;</span></span><br><span class="line"><span class="javascript">                    &#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">error</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                        <span class="built_in">console</span>.log(<span class="string">"error="</span> + error);</span></span><br><span class="line"><span class="undefined">                    &#125;);</span></span><br><span class="line"><span class="undefined">                &#125;</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/03/3-Vue-路由/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="New Jean">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="New Jean's log">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/03/3-Vue-路由/" itemprop="url">3. Vue 路由</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-03T21:53:08+08:00">
+                2018-05-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="3-Vue-路由"><a href="#3-Vue-路由" class="headerlink" title="3. Vue 路由"></a>3. Vue 路由</h2><h3 id="前端路由"><a href="#前端路由" class="headerlink" title="前端路由"></a>前端路由</h3><p>路由是根据不同的 url 地址展示不同的内容或页面。</p>
+<p>前端路由是把不同路由对应的内容或页面的任务交给前端来做，以前是通过服务端根据 url 的不同返回不同的页面来实现。</p>
+<h4 id="前端路由应用场景"><a href="#前端路由应用场景" class="headerlink" title="前端路由应用场景"></a>前端路由应用场景</h4><p>在单页面应用，大部分页面结构不变，只改变部分内容时使用。</p>
+<h4 id="前端路由的优缺点"><a href="#前端路由的优缺点" class="headerlink" title="前端路由的优缺点"></a>前端路由的优缺点</h4><ul>
+<li>优点：用户体验好，不需要每次都从服务器全部获取，快速展现给用户。</li>
+<li>缺点：<ul>
+<li>不利于SEO。</li>
+<li>使用浏览器的前进、后退，会重新发送请求，没能合理利用缓存。</li>
+<li>单页面无法记住之前滚动的位置，无法在前进、后退的时候记住滚动的位置。</li>
+</ul>
+</li>
+</ul>
+<h3 id="vue-router"><a href="#vue-router" class="headerlink" title="vue-router"></a>vue-router</h3><p>vue-router用来构建SPA</p>
+<p><code>&lt;router-link&gt;&lt;/router-link&gt;</code> (类似于 a 标签) 或  <code>this.$router.push({ path:&quot;&quot; })</code>（编程式路由，利用 js 来让页面进行跳转）。</p>
+<p><code>&lt;router-view&gt;&lt;/router-view&gt;</code> ，根据跳转 url 渲染内容，与页面跳转配合使用。</p>
+<h3 id="动态路由匹配"><a href="#动态路由匹配" class="headerlink" title="动态路由匹配"></a>动态路由匹配</h3><p>$route.params 可以拿到 url 中传入的参数。vue-route 对象实质上是对浏览器 history 的封装。</p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_184016.png" alt=""></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> GoodsList <span class="keyword">from</span> <span class="string">'./../views/GoodsList.vue'</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> Router(&#123;</span><br><span class="line">  routes: [</span><br><span class="line">    &#123;</span><br><span class="line">      path: <span class="string">'/goods/:goodsId'</span>,</span><br><span class="line">      name: <span class="string">'GoodsList'</span>,</span><br><span class="line">      component: GoodsList </span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;）</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span>&#123;&#123; $route.params.goodsId &#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>mode 属性可指定路由的模式为 </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> Router(&#123;</span><br><span class="line">  mode: <span class="string">'history'</span>, <span class="comment">//指定路由模式为history</span></span><br><span class="line">  <span class="comment">//mode: 'hash',</span></span><br><span class="line">  routes: [</span><br><span class="line">    &#123;&#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;）</span><br></pre></td></tr></table></figure>
+<h3 id="嵌套路由"><a href="#嵌套路由" class="headerlink" title="嵌套路由"></a>嵌套路由</h3><p>路由嵌套路由</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// router/index.js</span></span><br><span class="line"><span class="keyword">import</span> GoodsList <span class="keyword">from</span> <span class="string">'./../views/GoodsList.vue'</span></span><br><span class="line"><span class="keyword">import</span> Title <span class="keyword">from</span> <span class="string">'./../views/Title.vue'</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> Router(&#123;</span><br><span class="line">  routes: [</span><br><span class="line">    &#123;</span><br><span class="line">      path: <span class="string">'/goods'</span>,</span><br><span class="line">      name: <span class="string">'GoodsList'</span>,</span><br><span class="line">      component: GoodsList,</span><br><span class="line">      children: [&#123;</span><br><span class="line">          path: <span class="string">'title'</span>, <span class="comment">// 访问/goods/title</span></span><br><span class="line">      	  name: <span class="string">'title'</span>,</span><br><span class="line">      	  component：Title</span><br><span class="line">      &#125;]</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;）</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--GoodsList.vue--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">"/goods/title"</span>&gt;</span>显示商品标题<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-view</span>&gt;</span><span class="tag">&lt;/<span class="name">router-view</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="编程式路由"><a href="#编程式路由" class="headerlink" title="编程式路由"></a>编程式路由</h3><p>通过 js 来实现页面的跳转，<code>$router.push(&quot;name&quot;)</code> , <code>$router.push({path: &quot;name&quot;})</code> , <code>$router.push({path: &quot;name?a=123&quot;})</code> 或 <code>$router.push({path:&quot;name&quot;,query:{a: 123}})</code>, <code>$router.go(1)</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--GoodsList.vue--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>跳转至购物车页面<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">export</span> <span class="keyword">default</span>&#123;</span></span><br><span class="line"><span class="undefined">        data()&#123;&#125;,</span></span><br><span class="line"><span class="undefined">        method: &#123;</span></span><br><span class="line"><span class="undefined">            jump()&#123;</span></span><br><span class="line"><span class="javascript">                <span class="comment">//this.$router.push("/cart");</span></span></span><br><span class="line"><span class="javascript">                <span class="comment">//this.$router.push(&#123;path: "/cart"&#125;);</span></span></span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.$router.push(&#123;<span class="attr">path</span>: <span class="string">"/cart?goodsId=123"</span>);</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--Cart.vue--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span>&#123;&#123;$route.query.goodsId&#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><code>$route.query.goodsId</code> 获取 url 中传递的参数。</p>
+<h3 id="命名路由和命名视图"><a href="#命名路由和命名视图" class="headerlink" title="命名路由和命名视图"></a>命名路由和命名视图</h3><p>给路由定义不同的名字，根据名字进行匹配。给不同的 router-view 定义名字，通过名字进行对应组件的渲染。</p>
+<p>命名路由：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// router/index.js</span></span><br><span class="line"><span class="keyword">import</span> GoodsList <span class="keyword">from</span> <span class="string">'./../views/GoodsList.vue'</span></span><br><span class="line"><span class="keyword">import</span> Title <span class="keyword">from</span> <span class="string">'./../views/Title.vue'</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> Router(&#123;</span><br><span class="line">  routes: [</span><br><span class="line">    &#123;</span><br><span class="line">      path: <span class="string">'/goods'</span>,</span><br><span class="line">      name: <span class="string">'GoodsList'</span>, <span class="comment">//命名路由</span></span><br><span class="line">      component: GoodsList,</span><br><span class="line">    &#125;，</span><br><span class="line">    <span class="comment">/*&#123;</span></span><br><span class="line"><span class="comment">      path: '/cart',</span></span><br><span class="line"><span class="comment">      name: 'Cart', //命名路由</span></span><br><span class="line"><span class="comment">      component: GoodsList,</span></span><br><span class="line"><span class="comment">    &#125;，*/</span></span><br><span class="line">      &#123;</span><br><span class="line">      path: <span class="string">'/cart/:cartId'</span>, <span class="comment">//带参数的路由</span></span><br><span class="line">      name: <span class="string">'Cart'</span>, <span class="comment">//命名路由</span></span><br><span class="line">      component: GoodsList,</span><br><span class="line">    &#125;，</span><br><span class="line">  ]</span><br><span class="line">&#125;）</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--GoodsList.vue--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--&lt;router-link v-bind:to="&#123;name: 'Cart'&#125;"&gt;跳转到购物车&lt;/router-link&gt;--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">v-bind:to</span>=<span class="string">"&#123;name: 'Cart', params: &#123;cartId: 123&#125;&#125;"</span>&gt;</span>跳转到购物车<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-view</span>&gt;</span><span class="tag">&lt;/<span class="name">router-view</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>命名视图：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--App.vue--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-view</span>&gt;</span><span class="tag">&lt;/<span class="name">router-view</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-view</span> <span class="attr">name</span>=<span class="string">"title"</span>&gt;</span><span class="tag">&lt;/<span class="name">router-view</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-view</span> <span class="attr">name</span>=<span class="string">"img"</span>&gt;</span><span class="tag">&lt;/<span class="name">router-view</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// router/index.js</span></span><br><span class="line"><span class="keyword">import</span> GoodsList <span class="keyword">from</span> <span class="string">'./../views/GoodsList.vue'</span></span><br><span class="line"><span class="keyword">import</span> Title <span class="keyword">from</span> <span class="string">'./../views/Title.vue'</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> Router(&#123;</span><br><span class="line">  routes: [</span><br><span class="line">    &#123;</span><br><span class="line">      path: <span class="string">'/goods'</span>,</span><br><span class="line">      name: <span class="string">'GoodsList'</span>, <span class="comment">//命名路由</span></span><br><span class="line">      components: &#123;</span><br><span class="line">            <span class="keyword">default</span>: GoodsList,</span><br><span class="line">            title: Title,</span><br><span class="line">            img: Image</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;，</span><br><span class="line">    &#123;</span><br><span class="line">      path: <span class="string">'/cart/:cartId'</span>, <span class="comment">//带参数的路由</span></span><br><span class="line">      name: <span class="string">'Cart'</span>, <span class="comment">//命名路由</span></span><br><span class="line">      component: GoodsList,</span><br><span class="line">    &#125;，</span><br><span class="line">  ]</span><br><span class="line">&#125;）</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/02/2.1 Vue 项目初始化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="New Jean">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="New Jean's log">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/2.1 Vue 项目初始化/" itemprop="url">Vue 项目初始化</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T21:53:08+08:00">
                 2018-05-02
               </time>
             
@@ -660,7 +1150,7 @@
       
         
           
-            <h3 id="vue-项目初始化"><a href="#vue-项目初始化" class="headerlink" title="vue 项目初始化"></a>vue 项目初始化</h3><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装淘宝镜像：</p>
+            <h3 id="Vue-项目初始化"><a href="#Vue-项目初始化" class="headerlink" title="Vue 项目初始化"></a>Vue 项目初始化</h3><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装淘宝镜像：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https:<span class="comment">//registry.npm.taobao.org</span></span><br></pre></td></tr></table></figure>
 <p>安装 vue ：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install vue --save</span><br></pre></td></tr></table></figure>
@@ -731,7 +1221,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/02/1.vue概览/">
+    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/02/2.2 Vue 基础语法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="New Jean">
@@ -750,7 +1240,7 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/02/1.vue概览/" itemprop="url">Vue 核心概览</a></h2>
+                <a class="post-title-link" href="/2018/05/02/2.2 Vue 基础语法/" itemprop="url">Vue 基础语法</a></h2>
         
 
         <div class="post-meta">
@@ -762,7 +1252,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T22:53:08+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T21:53:08+08:00">
                 2018-05-02
               </time>
             
@@ -821,11 +1311,191 @@
       
         
           
-            <h2 id="Vue-核心概览"><a href="#Vue-核心概览" class="headerlink" title="Vue 核心概览"></a>Vue 核心概览</h2><p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_102525.png" alt=""></p>
+            <h2 id="Vue基础语法"><a href="#Vue基础语法" class="headerlink" title="Vue基础语法"></a>Vue基础语法</h2><h3 id="模板语法"><a href="#模板语法" class="headerlink" title="模板语法"></a>模板语法</h3><ul>
+<li>Mustache语法：{{ msg }}</li>
+<li>Html赋值：v-html = “”</li>
+<li>绑定属性：v-bind:id = “”</li>
+<li>使用表达式：{{ ok ? "YES" : "NO" }}</li>
+<li>文本赋值：v-text = “”</li>
+<li>指令：v-if = “”</li>
+<li>过滤器：{{ message || capitalize}}，v-bind:id=”rawId | formatId”</li>
+</ul>
+<h3 id="Class-和-style-绑定"><a href="#Class-和-style-绑定" class="headerlink" title="Class 和 style 绑定"></a>Class 和 style 绑定</h3><ul>
+<li>对象语法：v-bind:class=”{ active: isActive, ‘text-danger’: hasError }”</li>
+<li>数组语法：<code>&lt;div v-bind:class=&quot;[activeClass, errorClass]&quot;&gt;&lt;/div&gt;</code> </li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    activeClass: <span class="string">"active"</span>,</span><br><span class="line">    errorClass: <span class="string">"text-danger"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>style 绑定对象语法：<code>v-bind:style=&quot;{color:activeColor, fontSize: fontSize + &#39;px&#39;}&quot;</code></li>
+</ul>
+<h3 id="条件渲染"><a href="#条件渲染" class="headerlink" title="条件渲染"></a>条件渲染</h3><ul>
+<li>v-if</li>
+<li>v-else</li>
+<li>v-else-if</li>
+<li>v-show</li>
+<li>v-cloak</li>
+</ul>
+<p>v-if 控制dom是否渲染，v-show 控制隐藏/显示</p>
+<h3 id="事件处理器"><a href="#事件处理器" class="headerlink" title="事件处理器"></a>事件处理器</h3><ul>
+<li>v-on:click=”greet”，或 @click=”greet”</li>
+<li>v-on:click.stop、v-on:click.stop.prevent、v-on:click-self、v-on:click-once</li>
+<li>v-on:keyup.enter<ul>
+<li>.enter</li>
+<li>.tab</li>
+<li>.delete</li>
+<li>.esc</li>
+<li>.space</li>
+<li>.up</li>
+<li>.down</li>
+<li>.left</li>
+<li>.right</li>
+</ul>
+</li>
+</ul>
+<h3 id="Vue-组件"><a href="#Vue-组件" class="headerlink" title="Vue 组件"></a>Vue 组件</h3><p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_145403.png" alt=""></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/01/1.Vue概览/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="New Jean">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="New Jean's log">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/01/1.Vue概览/" itemprop="url">Vue 核心概览</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-01T21:53:08+08:00">
+                2018-05-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Vue-核心概览"><a href="#Vue-核心概览" class="headerlink" title="Vue 核心概览"></a>Vue 核心概览</h3><p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_102525.png" alt=""></p>
 <h3 id="通过MVVM的数据绑定实现自动同步"><a href="#通过MVVM的数据绑定实现自动同步" class="headerlink" title="通过MVVM的数据绑定实现自动同步"></a>通过MVVM的数据绑定实现自动同步</h3><p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_103049.png" alt=""></p>
 <h3 id="组件化"><a href="#组件化" class="headerlink" title="组件化"></a>组件化</h3><p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_103335.png" alt=""></p>
 <h3 id="Object-defineProperty"><a href="#Object-defineProperty" class="headerlink" title="Object.defineProperty()"></a>Object.defineProperty()</h3><p><code>Object.defineProperty()</code>  函数实现双向数据绑定，<code>Object.defineProperty()</code> 函数会给一个对象扩展属性。如下面的情形，会在 <code>obj</code>  对象上添加 <code>get</code> 和 <code>set</code> 属性（方法）。set 和 get 是属于 Object.defineProperty() 函数内部的 api ，当 <code>obj</code> 的 <code>userName</code> 属性发生改变时（被赋值时），会触发 <code>obj</code> 中的 <code>set</code> 方法；当获取 <code>obj</code> 的 <code>userName</code> 属性时（ <code>var a = obj.userName</code>），会触发 <code>obj</code> 中的 <code>get</code> 方法；</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>Object.defineProperty实现数据双向绑定<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span>  <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"userName"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"uName"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    var obj = &#123;</span></span><br><span class="line"><span class="undefined">        pwd: "123456"</span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="undefined">    </span></span><br><span class="line"><span class="undefined">    // Object.defineProperty()函数给一个对象扩展属性</span></span><br><span class="line"><span class="undefined">    //给obj对象扩展一个"userName"属性，属性的描述为&#123;get: ... , set: ...&#125;</span></span><br><span class="line"><span class="undefined">    Object.defineProperty(obj, "userName", &#123;</span></span><br><span class="line"><span class="undefined">        //value: 'river',</span></span><br><span class="line"><span class="undefined">        get: function () &#123;</span></span><br><span class="line"><span class="undefined">            console.log("get init");</span></span><br><span class="line"><span class="undefined">        &#125;,</span></span><br><span class="line"><span class="undefined">        set: function (val) &#123;</span></span><br><span class="line"><span class="undefined">            console.log(" set init");</span></span><br><span class="line"><span class="undefined">            document.getElementById("uName").innerText = val;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    &#125;);</span></span><br><span class="line"><span class="undefined">    </span></span><br><span class="line"><span class="undefined">    //监听键盘事件</span></span><br><span class="line"><span class="undefined">    document.getElementById("userName").addEventListener("keyup", function (event) &#123;</span></span><br><span class="line"><span class="undefined">        //document.getElementById("uName").innerText = event.target.value;</span></span><br><span class="line"><span class="undefined">        obj.userName = event.target.value;</span></span><br><span class="line"><span class="undefined">    &#125;);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>Object.defineProperty实现数据双向绑定<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span>  <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"userName"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"uName"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> obj = &#123;</span></span><br><span class="line"><span class="javascript">        pwd: <span class="string">"123456"</span></span></span><br><span class="line"><span class="undefined">    &#125;;</span></span><br><span class="line"><span class="undefined">    </span></span><br><span class="line"><span class="javascript">    <span class="comment">// Object.defineProperty()函数给一个对象扩展属性</span></span></span><br><span class="line"><span class="javascript">    <span class="comment">//给obj对象扩展一个"userName"属性，属性的描述为&#123;get: ... , set: ...&#125;</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">Object</span>.defineProperty(obj, <span class="string">"userName"</span>, &#123;</span></span><br><span class="line"><span class="javascript">        <span class="comment">//value: 'river',</span></span></span><br><span class="line"><span class="javascript">        get: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            <span class="built_in">console</span>.log(<span class="string">"get init"</span>);</span></span><br><span class="line"><span class="undefined">        &#125;,</span></span><br><span class="line"><span class="javascript">        set: <span class="function"><span class="keyword">function</span> (<span class="params">val</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            <span class="built_in">console</span>.log(<span class="string">" set init"</span>);</span></span><br><span class="line"><span class="javascript">            <span class="built_in">document</span>.getElementById(<span class="string">"uName"</span>).innerText = val;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    &#125;);</span></span><br><span class="line"><span class="undefined">    </span></span><br><span class="line"><span class="javascript">    <span class="comment">//监听键盘事件</span></span></span><br><span class="line"><span class="javascript">    <span class="built_in">document</span>.getElementById(<span class="string">"userName"</span>).addEventListener(<span class="string">"keyup"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="comment">//document.getElementById("uName").innerText = event.target.value;</span></span></span><br><span class="line"><span class="undefined">        obj.userName = event.target.value;</span></span><br><span class="line"><span class="undefined">    &#125;);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>event.target.value 触发事件的对象的值</p>
 
           
@@ -1231,158 +1901,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2017/09/27/垂直居中/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="New Jean">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="New Jean's log">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/27/垂直居中/" itemprop="url">垂直居中</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-27T12:03:08+08:00">
-                2017-09-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="垂直居中"><a href="#垂直居中" class="headerlink" title="垂直居中"></a>垂直居中</h3><p>1.父元素高度未知，且目标元素高度未知</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">parentElement</span>&#123;</span><br><span class="line">     <span class="attribute">position</span>:relative;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> <span class="selector-tag">childElement</span>&#123;</span><br><span class="line">     <span class="attribute">position</span>:absolute;</span><br><span class="line">     <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">     <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-50%);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<p>2.目标元素高度确定：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">parentElement</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">childElement</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">margin-top</span>: -<span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>3.父容器下只有一个元素，且父元素设置了高度</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">parentElement</span>&#123;</span><br><span class="line">    <span class="attribute">height</span>:xxx;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">childElement</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-50%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>4.flex布局</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">parentElement</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">display</span>: -webkit-flex;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>5.父元素高度确定的单行文本，设置height = line-height</p>
-<p>6.使用 <code>position: fixed</code> 或 <code>position: absolute</code>  ，加上 <code>margin: auto</code>  </p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">element</span>&#123;</span><br><span class="line"> 	<span class="attribute">position</span>: fixed / absolute;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">160px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">160px</span>;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">margin</span>: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1430,7 +1955,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1443,7 +1968,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
