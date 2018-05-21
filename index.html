@@ -249,6 +249,165 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/17/流氓电信/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="New Jean">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="New Jean's log">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/17/流氓电信/" itemprop="url">流氓电信</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-17T22:32:13+08:00">
+                2018-05-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>好久没写博客了，最近给博客换了新主题，打算写几篇博文归纳下知识。结果博客上线没两天，突然打不开了，页面显示如下：<img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-21_220943.png" alt=""></p>
+<ul>
+<li>报错大意是 $ 未定义，最先想到的是 jQuery 引用路径出错了，但是没道理啊，最近也没更新提交。</li>
+</ul>
+<p>于是，<code>hexo clean</code> 清理文件后，重新部署。但仍然出现相同的报错。</p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-21_221000.png" alt=""></p>
+<ul>
+<li>报错信息中有一个是说，地址为  <code>http://183.59.53.197:3737</code> 的请求被客户端拦截。貌似 <code>hexo</code> 中引用文件 url 没有是以 ip 开头的。</li>
+</ul>
+<p>先看看这货链接到的文件究竟是啥。</p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-21_221033.png" alt=""></p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-21_221149.png" alt=""></p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-21_221324.png" alt=""></p>
+<p>搜索看看这货到底是是什么玩意：</p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-21_230300.png" alt=""></p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-21_230820.png" alt=""></p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-21_231555.png" alt=""></p>
+<p>真相大白，惊不惊喜，意不意外。⊙﹏⊙‖∣° ，以前只是有听说电信很流氓，没想到还真是流氓。</p>
+<p>这个流氓电信还是个厉害角色，要打倒它还不太容易。1.按下面那样屏蔽链接（有时候会不管用）；2.需要关闭浏览器的 <code>AdBlock</code> 插件，前面报错信息中说的  <code>http://183.59.53.197:3737 ERR BLOCKED BY CLIENT</code> 应该就是指被 <code>AdBlock</code> 插件拦截了。</p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-21_232736.png" alt=""></p>
+<p>没办法，整栋公寓的宽带被电信给包揽了。如果可以有别的选择，我是绝不会选择流氓电信的，好憋屈啊 ( T___T )。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/16/vue子组件向父组件传递数据/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1060,167 +1219,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/02/2.1 Vue 项目初始化/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="New Jean">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="New Jean's log">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/02/2.1 Vue 项目初始化/" itemprop="url">Vue 项目初始化</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T21:53:08+08:00">
-                2018-05-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="Vue-项目初始化"><a href="#Vue-项目初始化" class="headerlink" title="Vue 项目初始化"></a>Vue 项目初始化</h3><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装淘宝镜像：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https:<span class="comment">//registry.npm.taobao.org</span></span><br></pre></td></tr></table></figure>
-<p>安装 vue ：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install vue --save</span><br></pre></td></tr></table></figure>
-<p> vue-cli 构建 SPA 应用：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g vue-cli</span><br><span class="line">vue init webpack-simple demo</span><br><span class="line">vue init webpack demo2</span><br></pre></td></tr></table></figure>
-<h3 id="vue-init-webpack-simple-demo"><a href="#vue-init-webpack-simple-demo" class="headerlink" title="vue init webpack-simple demo"></a>vue init webpack-simple demo</h3><p>使用 <code>vue init webpack-simple demo</code>  时生成的文件目录：</p>
-<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_112327.png" alt=""></p>
-<h3 id="vue-init-webpack-demo"><a href="#vue-init-webpack-demo" class="headerlink" title="vue init webpack demo"></a>vue init webpack demo</h3><p>使用 <code>vue init webpack demo</code>  时生成的文件目录：</p>
-<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_112557.png" alt=""></p>
-<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_113912.png" alt=""></p>
-<p><code>/build</code>  打包配置文件；</p>
-<p> <code>/config</code> 项目配置文件；</p>
-<p><code>/dist</code> 存放 run build 打包生成的文件 ；</p>
-<p><code>/node_modules</code>  npm 安装的模块；</p>
-<p> <code>/src</code> 项目源代码， <code>/src/App.vue</code>  入口组件， <code>/src/main.js</code>  项目入口文件；<code>/static</code> 图片等静态资源；</p>
-<p><code>.babelrc</code> 解析es6语法的配置；</p>
-<p><code>.editorconfig</code> 编辑器的配置；</p>
-<p><code>.gitignore</code> 配置 git 提交时忽略的文件；</p>
-<p><code>.postcssrc.js</code> 配置 html 添加前缀；</p>
-<p><code>index.html</code> 单页面入口；</p>
-<p><code>package-lock.json</code> 项目描述（指定依赖源）；</p>
-<p><code>package.json</code> 项目描述；</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/02/2.2 Vue 基础语法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1353,6 +1351,167 @@
 </li>
 </ul>
 <h3 id="Vue-组件"><a href="#Vue-组件" class="headerlink" title="Vue 组件"></a>Vue 组件</h3><p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_145403.png" alt=""></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2018/05/02/2.1 Vue 项目初始化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="New Jean">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="New Jean's log">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/02/2.1 Vue 项目初始化/" itemprop="url">Vue 项目初始化</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-02T21:53:08+08:00">
+                2018-05-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Vue-项目初始化"><a href="#Vue-项目初始化" class="headerlink" title="Vue 项目初始化"></a>Vue 项目初始化</h3><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装淘宝镜像：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https:<span class="comment">//registry.npm.taobao.org</span></span><br></pre></td></tr></table></figure>
+<p>安装 vue ：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install vue --save</span><br></pre></td></tr></table></figure>
+<p> vue-cli 构建 SPA 应用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g vue-cli</span><br><span class="line">vue init webpack-simple demo</span><br><span class="line">vue init webpack demo2</span><br></pre></td></tr></table></figure>
+<h3 id="vue-init-webpack-simple-demo"><a href="#vue-init-webpack-simple-demo" class="headerlink" title="vue init webpack-simple demo"></a>vue init webpack-simple demo</h3><p>使用 <code>vue init webpack-simple demo</code>  时生成的文件目录：</p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_112327.png" alt=""></p>
+<h3 id="vue-init-webpack-demo"><a href="#vue-init-webpack-demo" class="headerlink" title="vue init webpack demo"></a>vue init webpack demo</h3><p>使用 <code>vue init webpack demo</code>  时生成的文件目录：</p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_112557.png" alt=""></p>
+<p><img src="http://p8t5ozcgz.bkt.clouddn.com/postimg/2018-05-20_113912.png" alt=""></p>
+<p><code>/build</code>  打包配置文件；</p>
+<p> <code>/config</code> 项目配置文件；</p>
+<p><code>/dist</code> 存放 run build 打包生成的文件 ；</p>
+<p><code>/node_modules</code>  npm 安装的模块；</p>
+<p> <code>/src</code> 项目源代码， <code>/src/App.vue</code>  入口组件， <code>/src/main.js</code>  项目入口文件；<code>/static</code> 图片等静态资源；</p>
+<p><code>.babelrc</code> 解析es6语法的配置；</p>
+<p><code>.editorconfig</code> 编辑器的配置；</p>
+<p><code>.gitignore</code> 配置 git 提交时忽略的文件；</p>
+<p><code>.postcssrc.js</code> 配置 html 添加前缀；</p>
+<p><code>index.html</code> 单页面入口；</p>
+<p><code>package-lock.json</code> 项目描述（指定依赖源）；</p>
+<p><code>package.json</code> 项目描述；</p>
 
           
         
@@ -1682,225 +1841,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://riversword.github.io/2017/10/02/AJAX请求/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="New Jean">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="New Jean's log">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/02/AJAX请求/" itemprop="url">AJAX请求（一）</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-02T20:22:31+08:00">
-                2017-10-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="原生JavaScript中的AJAX请求"><a href="#原生JavaScript中的AJAX请求" class="headerlink" title="原生JavaScript中的AJAX请求"></a>原生JavaScript中的AJAX请求</h3><p>AJAX = Asynchronous JavaScript and XML（异步的JavaScript和XML）。</p>
-<h4 id="创建XMLHttpRequest对象"><a href="#创建XMLHttpRequest对象" class="headerlink" title="创建XMLHttpRequest对象"></a>创建XMLHttpRequest对象</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xmlhttp;</span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">window</span>.XMLHttpRequest)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// IE7+,Firefox,Chrome，Opera，Safari浏览器执行代码</span></span><br><span class="line">    xmlhttp = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//IE6,IE5浏览器执行代码</span></span><br><span class="line">    xmlhttp = <span class="keyword">new</span> ActiveXObject(<span class="string">"Microsoft.XMLHTTP"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>####发送XMLHttpRequest请求</p>
-<p>如需将请求发送到服务器，使用XMLHttpRequest对象的open()和send()方法；</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"ajax_info.txt"</span>,<span class="literal">true</span>);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">方法</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">open(method,url,async)</td>
-<td style="text-align:left">规定请求的类型、URL以及是否异步处理请求。<br>- method：请求的类型，GET或POST<br>-url：文件在服务器上的位置<br>-async：true（异步）或false（同步）</td>
-</tr>
-<tr>
-<td style="text-align:left">send(string)</td>
-<td style="text-align:left">将请求发送到服务器<br>-string：仅用于POST请求</td>
-</tr>
-</tbody>
-</table>
-<h5 id="GET还是POST？"><a href="#GET还是POST？" class="headerlink" title="GET还是POST？"></a>GET还是POST？</h5><p>与POST相比，GET更简单也更快，并且在大部分情况下都能使用。</p>
-<p>然而，在以下情况中，请使用POST请求：</p>
-<ul>
-<li>无法使用缓存文件（更新服务器上的文件或数据库）</li>
-<li>向服务器发送大量数据（POST没有数据量限制）</li>
-<li>发送包含未知字符的用户输入时，POST比GET更稳定也更可靠</li>
-</ul>
-<h6 id="GET请求"><a href="#GET请求" class="headerlink" title="GET请求"></a>GET请求</h6><p>一个简单的GET请求：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"/try/ajax/demo_get.php"</span>,<span class="literal">true</span>);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
-<p>在上面的例子中，你可能得到的是缓存的结果。</p>
-<p>为了避免这种情况，请向URL添加一个唯一的ID：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"/try/ajax/demo_get.php?t="</span> + <span class="built_in">Math</span>.random(),<span class="string">"true"</span>);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
-<p>如果你希望通过GET方法发送信息，请向URL添加信息：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(&quot;GET&quot;,&quot;/try/ajax/demo_get2.php?fname=Henry&amp;lname=Ford&quot;,true);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
-<h6 id="POST请求"><a href="#POST请求" class="headerlink" title="POST请求"></a>POST请求</h6><p>一个简单的POST请求：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"POST"</span>,<span class="string">"/try/ajax/demo_post.php"</span>,<span class="literal">true</span>);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
-<p>如果需要像HTML表单那样POST数据，请使用<code>setRequestHeader()</code>来添加HTTP头。然后在<code>send()</code>方法中规定你希望发送的数据：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"POST"</span>,<span class="string">""</span>,<span class="literal">true</span>);</span><br><span class="line">serRequestHeader(<span class="string">"Content-type"</span>,<span class="string">"application/x-www-form-urlencoded"</span>);</span><br><span class="line">xmlhttp.send(<span class="string">"fname=Henry&amp;name=Ford"</span>);</span><br></pre></td></tr></table></figure>
-<h5 id="异步-true或false"><a href="#异步-true或false" class="headerlink" title="异步-true或false"></a>异步-true或false</h5><p>AJAX指的是异步JavaScript和XML（Asynchronous JavaScript and XML）。</p>
-<p>XMLHttpRequest对象如果要用于AJAX的话，其open()方法async参数必须设置为true。</p>
-<p>很多在服务器执行的任务都相当费时。AJAX出现之前，这可能会引起应用程序挂起或停止。</p>
-<p>通过AJAX，JavaScript无需等待服务器的响应，而是：在等待服务器响应时执行其他脚本，当响应就绪后对响应进行处理。</p>
-<h6 id="async-true"><a href="#async-true" class="headerlink" title="async = true"></a>async = true</h6><p>当使用<code>async = true</code>时，请规定在响应处于<code>onreadystatechange</code>事件中的就绪状态时执行的函数：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (xmlhttp.readyState == <span class="number">4</span> &amp;&amp; xmlhttp.status == <span class="number">200</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">document</span>.getElementById(<span class="string">"myDiv"</span>).innerHTML = xmlhttp.responseText;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"/try/ajax/ajax_info.txt"</span>,<span class="literal">true</span>);</span><br><span class="line">xmlhttpsend();</span><br></pre></td></tr></table></figure>
-<h6 id="async-false"><a href="#async-false" class="headerlink" title="async = false"></a>async = false</h6><p>如需使用<code>async = false</code>，请将<code>open()</code>方法中的第三个参数改为<code>false</code>：</p>
-<p>不推荐使用 <code>async = fasle</code> ，但是对于一些小型的请求，也是可以的。</p>
-<p>JavaScript会等到服务器响应就绪才继续执行。如果服务器繁忙或缓慢，应用程序会挂起或停止。</p>
-<p>注意：使用<code>async = false</code> 时，请不要编写<code>onreadystatechange</code> 函数，把处理响应的代码放到 <code>send()</code> 语句后面即可：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">xmlhttp.open(<span class="string">"GET"</span>,<span class="string">"/try/ajax/ajax_info.txt"</span>,<span class="literal">false</span>);</span><br><span class="line">xmlhttp.send();</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">"myDiv"</span>).innerHTML = xmlhttp.responseText;</span><br></pre></td></tr></table></figure>
-<h4 id="AJAX响应"><a href="#AJAX响应" class="headerlink" title="AJAX响应"></a>AJAX响应</h4><p>如需获得来自服务器的响应，使用<code>XMLHttpRequest</code>对象的<code>responseText</code> 或  <code>responseXML</code> 属性。</p>
-<p><code>responseText</code>  获得字符串形式的响应数据。<code>responseXML</code> 获得XML形式的响应数据，还需要作为XML对象进行解析。</p>
-<h4 id="onreadystatechange事件"><a href="#onreadystatechange事件" class="headerlink" title="onreadystatechange事件"></a>onreadystatechange事件</h4><p>当请求被发送到服务器时，我们需要执行一些基于响应的任务。</p>
-<p>每当<code>readyState</code>改变时，就会触发<code>onreadystatechange</code>事件。<code>readyState</code> 属性存有XMLHttpRequest的状态信息。</p>
-<p>以下时XMLHttpRequest对象的三个重要属性：</p>
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>onreadystatechange</td>
-<td>存储函数（或函数名），每当<code>readyState</code>属性改变时，就会调用该函数。</td>
-</tr>
-<tr>
-<td>readyState</td>
-<td>存有XMLHttpRequest的状态。从0到4发生变化。<br>- 0：请求未初始化<br>- 1：服务器连接已建立<br>- 2：请求已接收<br>- 3：请求处理中<br>- 4：请求已完成，且响应已就绪</td>
-</tr>
-<tr>
-<td>status</td>
-<td>200：”OK”<br>404：未找到页面</td>
-</tr>
-</tbody>
-</table>
-<h4 id="AJAX实例"><a href="#AJAX实例" class="headerlink" title="AJAX实例"></a>AJAX实例</h4><p>创建请求对象，指定状态改变时的处理函数，发送请求。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xmlhttp;</span><br><span class="line"><span class="keyword">if</span> ( <span class="built_in">window</span>.XMLHttpRequest )</span><br><span class="line">&#123;</span><br><span class="line">    xmlhttp = <span class="keyword">new</span> <span class="built_in">window</span>.XMLHttpRequest();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    xmlhttp = <span class="keyword">new</span> ActiveXObject(<span class="string">"Microsoft.XMLHTTP"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">xmlhttp.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(xmlhttp.readyState = <span class="number">4</span> &amp;&amp; xmlhttp.status = <span class="number">200</span>)&#123;</span><br><span class="line">        <span class="built_in">document</span>.getElementById(<span class="string">"myDiv"</span>).innerHTML = xmlhttp.responseText;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">xmlhttp.open(<span class="string">"GET"</span>,url,<span class="literal">true</span>);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1955,7 +1895,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1968,7 +1908,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
