@@ -1673,10 +1673,11 @@ pre .javascript .function {
     font-stretch: normal;*/
   font-size: 18px;
   font-family: "Microsoft Yahei";
-  background: #f44336;
+  background: #222;
 }
 #rewardButton span:hover {
-  background: #f7877f;
+  background: #ddd;
+  color: #000;
 }
 #QR {
   padding-top: 20px;
