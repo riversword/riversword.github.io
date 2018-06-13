@@ -4,9 +4,6 @@
 *, *:after, *:before {
   margin: 0;
   padding: 0;
-}
-
-*, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -992,17 +989,21 @@ p{
   width: 60px;
   height: 60px;
   margin-left: .3rem;
-  background-image: url("../image/left.svg");
+  /*background-image: url("../image/left.svg");*/
+  background-image: url("../image/banner_arrow.png");
   background-size: 100%;
-  opacity: 0.5;
+  background-position: 0 0;
+  /*opacity: 0.5;*/
 }
 #works #works-box .swiper-button-next {
   width: 60px;
   height: 60px;
   margin-right: .3rem;
-  background-image: url("../image/right.svg");
+  /*background-image: url("../image/right.svg");*/
+  background-image: url("../image/banner_arrow.png");
   background-size: 100%;
-  opacity: 0.5;
+  background-position: 0 100%;
+  /*opacity: 0.5;*/
 }
 #works #works-box .swiper-button-prev:hover, #works #works-box .swiper-button-next:hover {
   opacity: 1;
