@@ -5,3 +5,4 @@ build/
 webpack.config.js
 package.json
 .editorconfig
+app.js
